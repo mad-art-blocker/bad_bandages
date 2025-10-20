@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css">
+    <title>Home Page</title>
+    <script src="./index.js" defer type="module"></script>
+    <script
+      src="./src/scripts/intersectionObservers.js"
+      defer
+      type="module"
+    ></script>
+  </head>
+
+  <body>
+    <!-- MAIN WRAPPER -->
+    <div class="page-container">
+      <!-- HEADER AND NAVBAR -->
+      <header>
+        <nav class="navbar-main">
+          <div class="navbar-container large-container">
+            <img
+              src="/bad-bandages-logo130x52.svg"
+              alt="bandaid logo"
+              height="52"
+              width="130"
+            />
+            <a href="/" class="siteTitleJS logo-text">...</a>
+            <button
+              class="navbar-toggle"
+              aria-label="Toggles Menu List"
+              type="button"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="/" aria-current="page">Home</a></li>
+              <li><a href="./about/">About</a></li>
+              <li><a href="./grid-page/">Grid Page</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <div class="bg-banner large-container">
+        <section class="intro-box">
+          <h1>HOME PAGE</h1>
+          <p>Welcome to the home page!</p>
+          <p>I'm using a large-container</p>
+        </section>
+      </div>
+
+      <!-- MAIN -->
+      <main>
+        <!-- CARDS CONTAINER -->
+        <div class="card-grid large-container marginY" id="observeThis">
+          <article class="card">
+            <h3 class="card-title">Card 1</h3>
+
+            <picture class="card-content">
+              <source
+                srcset="./src/assets/bandage-card.svg"
+                media="(min-width: 400px)"
+              >
+              <source
+                srcset="./src/assets/bandage-card.png"
+                media="(max-width: 400px)"
+              >
+              <img
+                src="./src/assets/bandage-card.svg"
+                alt="bandage card"
+                width="200"
+                height="100"
+                loading="lazy"
+              />
+            </picture>
+            <footer class="txt-center">Bad Bandage</footer>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Card 2</h3>
+            <p class="card-content">Content for card 2.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Card 3</h3>
+            <p class="card-content">Content for card 3.</p>
+          </article>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <small>
+          <span id="thisYearJS"></span> <span class="siteTitleJS">|</span>
+          &copy;. All rights reserved. | <a
+            href="#"
+          >Privacy Policy</a>
+          <p>Version 1.0 October 6, 2025</p>
+        </small>
+      </footer>
+    </div>
+
+    <!-- <script type="module" src="/src/home.js"></script> -->
+  </body>
+</html>

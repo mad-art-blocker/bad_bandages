@@ -1,0 +1,144 @@
+.navbar-main {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg1-color);
+  justify-content: center;
+  height: var(--80px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* Left 0 because on mobile doesn't respect the global container's border */
+  left: 0;
+  /* background: transparent; */
+  /* box-shadow: var(--color-shadow); */
+  /* backdrop-filter: blur(10px); */
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-menu {
+  display: flex;
+  text-align: center;
+  gap: var(--48px);
+
+  a {
+    font-size: calc(var(--10px) + var(--4px));
+    /* Long words or paragraphs wont wrap: */
+    white-space: nowrap;
+    font-size: clamp(
+      0.875rem,
+      0.6346153846153846rem + 1.0256410256410255vw,
+      1.15rem
+    );
+    transition: color 150ms ease;
+
+    &:hover {
+      color: var(--text-light);
+    }
+  }
+}
+
+.navbar-menu.active {
+  display: flex;
+}
+
+.navbar-toggle {
+  background: var(--bg2-color);
+  cursor: pointer;
+  display: none;
+  padding: var(--8px);
+
+  .bar {
+    display: block;
+    width: var(--25px);
+    height: var(--4px);
+    margin: var(--4px) auto;
+    background-color: var(--text-dark);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Hamburger menu transforms to an "X" */
+.navbar-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* .logo {
+  cursor: pointer;
+  height: 4rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+} */
+
+[aria-current] {
+  background-color: var(--color-black);
+  padding: var(--16px) var(--10px);
+  /* text-decoration: underline; */
+}
+
+/*? MAIN NAVBAR MEDIA QUERIES ?*/
+/* Smallest to the largest */
+/**=========== MEDIA QUERIES 480px ===========**/
+
+@media (max-width: 30rem) {
+  .navbar-container {
+    padding: 0 var(--16px);
+
+    ul a {
+      font-size: calc(var(--10px) + var(--4px));
+    }
+  }
+}
+
+/**=========== MEDIA QUERIES 768px ===========**/
+
+@media (max-width: 48rem) {
+  .navbar-main {
+    backdrop-filter: none;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+    border-left: var(--4px) solid var(--border-color);
+    display: none;
+    gap: var(--25px) !important;
+    height: 100vh;
+    width: 250px;
+    padding: 5rem var(--25px);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 101;
+  }
+
+  [aria-current] {
+    padding: var(--8px);
+  }
+}
+
+/**=========== MEDIA QUERIES 810px ===========**/
+/* 50.625rem */

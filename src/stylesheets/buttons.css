@@ -1,0 +1,20 @@
+/* button {
+  border: none;
+  border-radius: 20px;
+  background-color: #a673cf;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button:active {
+  color: #ea1538;
+  background-color: white;
+} */

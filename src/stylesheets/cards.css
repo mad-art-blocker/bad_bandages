@@ -1,0 +1,58 @@
+/* 3-CARD GRID LAYOUT */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--25px);
+  height: auto;
+}
+
+.card {
+  background-color: var(--bg1-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--6px);
+  padding: var(--10px);
+
+  /* overflow: hidden; */
+
+  /* transition: box-shadow 0.2s; */
+
+  /* &:hover {
+    box-shadow: var(--color-shadow);
+  } */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--10px);
+  text-align: center;
+}
+
+.card-content {
+  color: var(--text-dark);
+  border-radius: var(--6px);
+  margin: auto;
+
+  img {
+    margin-bottom: var(--16px);
+  }
+}
+
+/* Smallest to the largest */
+
+/**=========== MEDIA QUERIES 480px ===========**/
+/* 30rem */
+/**=========== MEDIA QUERIES 768px ===========**/
+/*? CARD GRID ?*/
+
+@media (max-width: 48rem) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    width: fit-content;
+    /*? END OF CARD GRID ?*/
+  }
+}
+
+/**=========== MEDIA QUERIES 810px ===========**/
+/* 50.625rem */

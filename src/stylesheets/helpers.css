@@ -1,0 +1,55 @@
+/***** GLOBAL MAIN UTILITIES *****/
+/* ///////////////////////////// */
+/***** Containers *****/
+.large-container {
+  max-width: var(--1440px);
+  margin: auto;
+}
+
+.medium-container {
+  max-width: var(--1280px);
+  margin: auto;
+}
+
+.small-container {
+  max-width: var(--810px);
+  margin: auto;
+}
+
+/***** GLOBAL HELPERS *****/
+
+.test {
+  border: var(--1px) red solid;
+}
+
+.txt-light {
+  color: var(--text-light);
+}
+
+.txt-dark {
+  color: var(--text-dark);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.highlight {
+  color: orange;
+}
+
+.paddingX {
+  padding: 0 1.5rem;
+}
+
+.paddingY {
+  padding: 1.5rem 0;
+}
+
+.marginX {
+  padding: 0 2.5rem;
+}
+
+.marginY {
+  padding: 5rem 0;
+}

@@ -1,0 +1,80 @@
+@import url("./src/stylesheets/cards.css");
+
+/* h1 in index.css */
+
+/* h1 {
+  color: var(--text-light);
+  font-size: clamp(
+    1.5rem,
+    0.2387820512820512rem + 3.2478632478632483vw,
+    2.1875rem
+  );
+  line-height: 1.1;
+  margin-block: 0.2em;
+} */
+
+.intro-box {
+  transform: translateX(100px) translateY(200px);
+  /* max-width: fit-content; */
+  width: var(--300px);
+  /* padding: var(--10px); */
+  text-align: center;
+  /* height: 1000px; */
+}
+
+.bg-banner {
+  /* shape-margin: calc(var(--10px) + var(--2px)); */
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url(./src/assets/bb-mascot-480x270.svg);
+  /* background-position: center; */
+  background-position: top var(--80px) right var(--25px);
+  background-size: cover;
+  /* object-fit: scale-down; */
+  height: 72vh;
+}
+
+/* - IntersectionObserver() */
+#observeThis img {
+  opacity: 0;
+  translate: -100%;
+  transition: all 800ms ease;
+  rotate: -360deg;
+}
+
+#observeThis.showMe img {
+  opacity: 1;
+  translate: 0;
+  rotate: none;
+}
+
+/*? HOME & HERO MEDIA QUERIES ?*/
+
+/* Smallest to the largest */
+/**=========== MEDIA QUERIES 480px ===========**/
+/* 30rem */
+
+/*? Hero Section ?*/
+@media (max-width: 30rem) {
+  .bg-banner {
+    background-image: url(./src/assets/bb-mascot134x184.svg);
+    background-position: bottom;
+    /* object-fit: scale-down; */
+    background-size: 80%;
+    height: 65dvh;
+  }
+}
+
+/**=========== MEDIA QUERIES 768px ===========**/
+/* 48rem */
+/**=========== MEDIA QUERIES 810px ===========**/
+
+/* 50.625rem */
+
+/*? Hero Section ?*/
+@media (max-width: 50.625rem) {
+  .intro-box {
+    margin: 100px auto;
+    transform: none;
+  }
+}

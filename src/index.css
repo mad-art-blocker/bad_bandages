@@ -1,0 +1,158 @@
+:root {
+  /* GRAY GRADIENT COLORS: */
+  /* --color-*: initial; */
+  --color-white: oklab(81.211% 0.02562 -0.02409);
+  --color-swatch1: oklab(69.21300000000001% 0.01603 -0.01781);
+  --color-swatch2: oklab(32.562999999999995% 0.0396 -0.08226);
+  --color-swatch3: oklab(24.805% 0.0332 -0.0691);
+  --color-black: oklab(22.913% 0.02786 -0.05577);
+
+  /* VIBRANT COLORS: */
+  --color-accent: oklab(63.534% 0.1111 0.08699);
+  --color-highlight: oklab(61.145% -0.05909 -0.06353 / 0.475);
+  --color-important: oklch(57.321% 0.19998 310.001);
+  --color-bandage: oklab(74.298% 0.01387 0.11041);
+  --color-wild: oklab(64.912% 0.08902 -0.08685);
+  /* --color-shadow: 0 4px 8px var(--color-swatch1); */
+
+  --text-light: var(--color-white);
+  --text-dark: var(--color-swatch1);
+  --bg1-color: var(--color-swatch2);
+  --bg2-color: var(--color-swatch3);
+  --bg3-color: oklab(25.839000000000002% 0.03339 -0.0651);
+  --border-color: var(--color-black);
+
+  /* REM SIZES */
+
+  /* PIXELS TO REM:
+    Base # = 16px
+  ==========================
+  Divide # of pixes by 16px:
+  48px / 16px = 3rem
+  20px / 16px = 1.25rem
+  */
+
+  --1px: 0.0625rem;
+  --2px: 0.125rem;
+  --4px: 0.25rem;
+  --6px: 0.375rem;
+  --8px: 0.5rem;
+  --10px: 0.625rem;
+  --16px: 1rem;
+  --20px: 1.25rem;
+  --25px: 1.5625rem;
+  --32px: 2rem;
+  --48px: 3rem;
+  --64px: 4rem;
+  --80px: 5rem;
+  --100px: 6.5rem;
+  --300px: 18.75rem;
+  --400px: 25rem;
+  --700px: 43.75rem;
+  /* CONTAINER SIZES */
+  --810px: 50.625rem;
+  --1280px: 80rem;
+  --1440px: 80rem;
+
+  /* Calc Usage: */
+
+  /* calc(var(--4px) + var(--2px)); */
+  /* calc(var(--400px) + var(--100px) + var(--100px); */
+  /* Negative numbers work-around?: */
+  /* calc(var(--300px) * -1); */
+
+  /* Animation Transitions 
+  Usage: transition: var(--main-transition);
+  */
+  --main-transition: all 0.4s linear;
+}
+
+*,
+*::before,
+*::after {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: var(--bg2-color);
+  color: var(--text-dark);
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+.page-container {
+  border: none;
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.logo-text {
+  color: var(--color-bandage);
+  font-size: clamp(
+    1rem,
+    1.5vw,
+    2.5rem
+  );
+  line-height: 1.1;
+  margin-block: 0.2em;
+}
+
+h1 {
+  color: var(--text-light);
+  font-size: clamp(
+    1.5rem,
+    2vw,
+    3rem
+  );
+  line-height: 1.1;
+  margin-block: 0.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  /* aspect-ratio: 9 / 16; */
+  /* shape-margin: calc(var(--10px) + var(--2px)); */
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* h1 in the pages CSS */
+
+h2 {
+  color: var(--text-light);
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+
+/**=========== MEDIA QUERIES 810px ===========**/
+/*? Page Container ?*/
+
+@media (max-width: 50.625rem) {
+  .page-container {
+    border: var(--10px) solid var(--border-color);
+  }
+}
