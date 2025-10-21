@@ -15,8 +15,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "./src/routes/about/index.html"),
-        grid: resolve(__dirname, "./src/routes/grid-page/index.html"),
+        about: resolve(__dirname, "./about/index.html"),
+        bandage: resolve(__dirname, "./bandages/index.html"),
       },
     },
   },

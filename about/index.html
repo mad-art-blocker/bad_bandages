@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./about.css">
-    <title>About Page</title>
-    <script type="module" src="../index.js" defer></script>
-  </head>
 
-  <body>
-    <!-- MAIN WRAPPER -->
-    <div class="page-container">
-      <!-- HEADER AND NAVBAR -->
-      <header>
-        <nav class="navbar-main">
-          <div class="navbar-container small-container">
-            <a href="/" class="siteTitleJS logo-text">...</a>
-            <button
-              class="navbar-toggle"
-              aria-label="Toggles Menu List"
-              type="button"
-            >
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-            <ul class="navbar-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="#top" aria-current="page">About</a></li>
-              <li><a href="../grid-page/">Grid Page</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./about.css">
+  <title>About Page</title>
+  <script type="module" src="../index.js" defer></script>
+</head>
 
-      <!-- HERO -->
-      <div class="bg-banner small-container">
-        <section class="intro-box">
-          <h1>ABOUT PAGE</h1>
-          <p>Welcome to the About page!</p>
-          <p>I'm using a small-container class.</p>
-        </section>
-      </div>
-      <main>
-        <p class="txt-center">
-          You can remove the "large-medium-small-container" class in any section
-          block to make it 100% wide.
-        </p>
-      </main>
+<body>
+  <!-- MAIN WRAPPER -->
+  <div class="page-container">
+    <!-- HEADER AND NAVBAR -->
+    <header>
+      <nav class="navbar-main">
+        <div class="navbar-container small-container">
+          <a href="/" class="siteTitleJS logo-text">...</a>
+          <button class="navbar-toggle" aria-label="Toggles Menu List" type="button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="#top" aria-current="page">About</a></li>
+            <li><a href="../bandages/">Bandages</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-      <!-- FOOTER -->
-      <footer class="main-footer">
-        <small>
-          &copy; <span id="thisYearJS"></span> <span class="siteTitleJS"
-          >|</span>. All rights reserved. | <a
-            href="#"
-          >Privacy Policy</a>
-        </small>
-      </footer>
+    <!-- HERO -->
+    <div class="bg-banner small-container">
+      <section class="intro-box">
+        <h1>ABOUT PAGE</h1>
+        <p>Welcome to the About page!</p>
+        <p>I'm using a small-container class.</p>
+      </section>
     </div>
+    <main>
+      <p class="txt-center">
+        You can remove the "large, medium, small containers" class in any section
+        block to make it 100% wide.
+      </p>
+    </main>
 
-    <!-- <script type="module" src="/src/pages/about.js"></script> -->
-  </body>
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <small>
+        &copy; <span id="thisYearJS"></span> <span class="siteTitleJS">|</span>. All rights reserved. | <a
+          href="#">Privacy Policy</a>
+      </small>
+    </footer>
+  </div>
+
+  <!-- <script type="module" src="/src/pages/about.js"></script> -->
+</body>
+
 </html>
