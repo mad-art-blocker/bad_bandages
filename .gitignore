@@ -12,13 +12,18 @@ dist
 dist-ssr
 .vite
 .vite.config.js
-#.vite.config.ts
+.vite.config.ts
 *.local
 
 # Deno/NPM/PNPM
-package.json
 deno.json
 deno.lock
+package.json
+package.lock
+npm.lock
+pnpm.lock
+yarn.lock
+
 
 # Editor directories and files
 .vscode/*
