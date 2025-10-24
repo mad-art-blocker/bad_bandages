@@ -59,8 +59,10 @@ deno init --npm vite .
 ```json
   "scripts": {
 
-  "dev": "vite",
-  "devfirefox": "BROWSER=firefox vite", //opens firefox broswer or change it to another. dev script opens up the default browser
+// Opens firefox/chrome broswer or change it to another. dev script opens up the default browser or take it out.
+    "dev": "vite",
+    "devchrome": "BROWSER=chrome vite",
+    "devfirefox": "BROWSER=firefox vite",
   ...,
   ...,
   ...,
@@ -69,7 +71,7 @@ deno init --npm vite .
 
     "upgradeDepend": "deno outdated --update --latest", // Updates all dependencies.
     "formatter": "deno fmt --single-quote", // Formatting and to change double to single qoutes.
-    "denolintfix": "deno lint --fix", // Linting 
+    "denolintfix": "deno lint --fix", // Linting
     "delete": "rm -rf dist", // Deletes the "dist" folder after previewing the build.
     "deletepackages": "npx npkill" // deletes node_modules folder (packages).
   },
@@ -94,5 +96,3 @@ npm run dev
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
