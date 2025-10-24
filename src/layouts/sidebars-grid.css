@@ -3,25 +3,25 @@
 /* 2 SIDEBARS GRID */
 
 .sidebars-grid {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  grid-template-rows: var(--100px);
-  grid-template-areas: 'navb1 main navb2';
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: var(--100px);
+    grid-template-areas: "navb1 main navb2";
 }
 
 .navbar1 {
-  grid-area: navb1;
-  background-color: var(--bg3-color);
+    grid-area: navb1;
+    background-color: var(--bg3-color);
 }
 
 main {
-  grid-area: main;
-  background-color: var(--bg2-color);
+    grid-area: main;
+    background-color: var(--bg2-color);
 }
 
 .navbar2 {
-  grid-area: navb2;
-  background-color: var(--bg3-color);
+    grid-area: navb2;
+    background-color: var(--bg3-color);
 }
 
 /*? SIDE-BARS MEDIA QUERIES ?*/
@@ -35,9 +35,9 @@ main {
 /* 50.625rem */
 
 @media (max-width: 50.625rem) {
-  .sidebars-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr min-content;
-    grid-template-areas: 'navb1' 'main' 'navb2';
-  }
+    .sidebars-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: "navb1" "main" "navb2";
+    }
 }
