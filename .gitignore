@@ -37,3 +37,5 @@ yarn.lock
 *.sw?
 mise.toml
 *.txt
+.env
+.env.local
