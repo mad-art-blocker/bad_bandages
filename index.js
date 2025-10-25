@@ -1,18 +1,18 @@
-import './src/layouts/navbar.css';
-import './src/layouts/footer.css';
-import './src/stylesheets/helpers.css';
+import "./src/layouts/navbar.css";
+import "./src/layouts/footer.css";
+import "./src/stylesheets/helpers.css";
 
-// Always keep index.css at the end to ensure it overrides other styles, specially for media queries.
-import './src/index.css';
+// Always keep global.css at the end to ensure it overrides other styles, specially for media queries.
+import "./src/global.css";
 
 // WEBSITE TITLES PROPERTIES:
 const titlesKeys = {
-  webSiteTitle: 'Bad Bandages',
+  webSiteTitle: "Bad Bandages",
   // subTitle: "Malas Vendas"
 };
 
 // Website Title Name
-const injectTitle = document.querySelectorAll('.siteTitleJS');
+const injectTitle = document.querySelectorAll(".siteTitleJS");
 for (let it = 0; it < injectTitle.length; it++) {
   injectTitle[it].textContent = `${titlesKeys.webSiteTitle.toUpperCase()}`;
 }
@@ -21,16 +21,16 @@ for (let it = 0; it < injectTitle.length; it++) {
 // document.querySelector(".subTitlesJS").textContent = titlesKeys.subTitle;
 
 // HAMBURGER MENU TOGGLE
-const navbarToggle = document.querySelector('.navbar-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
+const navbarToggle = document.querySelector(".navbar-toggle");
+const navbarMenu = document.querySelector(".navbar-menu");
 
-navbarToggle.addEventListener('click', () => {
-  navbarToggle.classList.toggle('active');
-  navbarMenu.classList.toggle('active');
+navbarToggle.addEventListener("click", () => {
+  navbarToggle.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
 });
 
 // Footer Date:
 const serveYear = new Date();
 const year = serveYear.getFullYear();
 
-document.getElementById('thisYearJS').textContent = year;
+document.getElementById("thisYearJS").textContent = year;
