@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 .vite
-.vite.config.js
-.vite.config.ts
+# vite.config.js
+# vite.config.ts
 *.local
 
 # Deno/NPM/PNPM

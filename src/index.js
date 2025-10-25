@@ -1,9 +1,9 @@
-import "./src/layouts/navbar.css";
-import "./src/layouts/footer.css";
-import "./src/stylesheets/helpers.css";
+import "./layouts/navbar.css";
+import "./layouts/footer.css";
+import "./stylesheets/helpers.css";
 
 // Always keep global.css at the end to ensure it overrides other styles, specially for media queries.
-import "./src/global.css";
+import "./global.css";
 
 // WEBSITE TITLES PROPERTIES:
 const titlesKeys = {

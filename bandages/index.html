@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./bandages.css" />
         <title>Bandages Page</title>
 
-        <script type="module" src="../index.js" defer></script>
+        <script type="module" src="../src/index.js" defer></script>
     </head>
 
     <body>
@@ -17,6 +17,19 @@
             <header>
                 <nav class="navbar-main">
                     <div class="navbar-container">
+                        <a
+                            href="/"
+                            class="logo-link"
+                            aria-label="Go to homepage"
+                        >
+                            <img
+                                src="/bad-bandages-logo130x52.svg"
+                                alt="Bad Bandages logo"
+                                height="52"
+                                width="130"
+                            />
+                        </a>
+
                         <a href="/" class="siteTitleJS logo-text">...</a>
                         <button
                             class="navbar-toggle"
@@ -110,16 +123,18 @@
         <!-- Footer is not part of the grid layout -->
         <footer class="main-footer">
             <small>
-                <span class="siteTitleJS">|</span> &copy;
-                <span id="thisYearJS"></span> All rights reserved. |
-                <a href="#top">Privacy Policy |</a>
-                v.1.0 - October 23, 2025
+                <span class="siteTitleJS">|</span> &copy; &nbsp;
+                <span id="thisYearJS"> </span>&nbsp; All rights reserved. |
+                <a href="#top">&nbsp; Privacy Policy | </a>&nbsp; v.1.0 -
+                October 23, 2025
             </small>
         </footer>
 
         <script>
             function toggleDrawer() {
-                const drawer = document.querySelector(".drawer");
+                const drawer = document.querySelector(
+                    ".drawer",
+                );
                 if (!drawer) return;
                 if (
                     drawer.style.bottom === "0px" ||

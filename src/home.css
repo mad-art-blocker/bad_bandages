@@ -1,4 +1,4 @@
-@import url("./src/stylesheets/cards.css");
+@import url("./stylesheets/cards.css");
 
 /* h1 in index.css */
 
@@ -26,7 +26,7 @@
   /* shape-margin: calc(var(--10px) + var(--2px)); */
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-image: url(./src/assets/bb-mascot-480x270.svg);
+  background-image: url(./assets/bb-mascot-480x270.svg);
   /* background-position: center; */
   background-position: top var(--80px) right var(--25px);
   background-size: cover;
@@ -57,7 +57,7 @@
 /*? Hero Section ?*/
 @media (max-width: 30rem) {
   .bg-banner {
-    background-image: url(./src/assets/bb-mascot134x184.svg);
+    background-image: url(./assets/bb-mascot134x184.svg);
     background-position: bottom;
     /* object-fit: scale-down; */
     background-size: 80%;
