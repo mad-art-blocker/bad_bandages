@@ -14,8 +14,10 @@ Use a package manager  to install [Vite](https://vite.dev/guide/#scaffolding-yo
 
 ```sh
 # I use Deno:
-
 deno init --npm vite .
+
+# Or npm:
+npm create vite@latest .
 ```
 
 1. Choose Vanilla as a Framework
@@ -47,8 +49,9 @@ deno init --npm vite .
 | about folder
 | grid-page folder
 | node_modules folder
-
 ```
+
+Read more about Multi-Page App [Vite Config](https://vite.dev/guide/build.html#multi-page-app)
 
 ## Optional Deno Scripts
 
@@ -77,7 +80,40 @@ deno init --npm vite .
   },
 ```
 
-Read more about Multi-Page App [Vite Config](https://vite.dev/guide/build.html#multi-page-app)
+---
+
+## Optional Plugins
+
+Simple HTML Minify plugin to minify HTML during the build:
+
+```bash
+deno add -D npm:vite-plugin-simple-html
+# Or:
+npm install vite-plugin-simple-html
+```
+
+
+Import the plugin:
+
+```js
+//vite.config.js
+
+import simpleHtmlPlugin from "vite-plugin-simple-html";
+```
+
+Add it to your vite.config.js file, plugin's array:
+
+Check the [vite-plugin-simple-html](https://github.com/wojtekmaj/vite-plugin-simple-html "GitHub Plugin Page") plugin for more info and options.
+
+```js
+// vite.config.js
+
+  plugins: [
+    simpleHtmlPlugin({
+      minify: true,
+    }),
+  ],
+```
 
 And your done…
 
