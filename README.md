@@ -62,7 +62,8 @@ Read more about Multi-Page App [Vite Config](https://vite.dev/guide/build.html#m
 ```json
   "scripts": {
 
-// Opens firefox/chrome broswer or change it to another. dev script opens up the default browser or take it out.
+//  Opens firefox/chrome broswer or change it to another. dev script opens up the default browser or take it out. (Works on Visual Studio Code only?)
+
     "dev": "vite",
     "devchrome": "BROWSER=chrome vite",
     "devfirefox": "BROWSER=firefox vite",
@@ -119,11 +120,7 @@ And your done…
 
 ```sh
 deno task dev
-```
-
-// Or:
-
-```sh
+# Or:
 npm run dev
 ```
 
