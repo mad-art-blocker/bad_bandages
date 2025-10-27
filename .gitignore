@@ -19,10 +19,8 @@ dist-ssr
 deno.json
 deno.lock
 package.json
-package.lock
-npm.lock
-pnpm.lock
-yarn.lock
+package-lock.json
+
 
 
 # Editor directories and files
