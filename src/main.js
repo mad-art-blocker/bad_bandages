@@ -6,13 +6,13 @@ import "./stylesheets/helpers.css";
 import "./global.css";
 
 // WEBSITE TITLES PROPERTIES:
-const titlesKeys = {
+let titlesKeys = {
   webSiteTitle: "Bad Bandages",
   // subTitle: "Malas Vendas"
 };
 
 // Website Title Name
-const injectTitle = document.querySelectorAll(".siteTitleJS");
+let injectTitle = document.querySelectorAll(".siteTitleJS");
 for (let it = 0; it < injectTitle.length; it++) {
   injectTitle[it].textContent = `${titlesKeys.webSiteTitle.toUpperCase()}`;
 }
@@ -21,8 +21,8 @@ for (let it = 0; it < injectTitle.length; it++) {
 // document.querySelector(".subTitlesJS").textContent = titlesKeys.subTitle;
 
 // HAMBURGER MENU TOGGLE
-const navbarToggle = document.querySelector(".navbar-toggle");
-const navbarMenu = document.querySelector(".navbar-menu");
+let navbarToggle = document.querySelector(".navbar-toggle");
+let navbarMenu = document.querySelector(".navbar-menu");
 
 navbarToggle.addEventListener("click", () => {
   navbarToggle.classList.toggle("active");
@@ -30,7 +30,7 @@ navbarToggle.addEventListener("click", () => {
 });
 
 // Footer Date:
-const serveYear = new Date();
-const year = serveYear.getFullYear();
+let serveYear = new Date();
+let year = serveYear.getFullYear();
 
 document.getElementById("thisYearJS").textContent = year;
