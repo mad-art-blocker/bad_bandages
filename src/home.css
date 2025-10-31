@@ -57,7 +57,7 @@
 /*? Hero Section ?*/
 @media (max-width: 30rem) {
   .bg-banner {
-    background-image: url(./assets/bb-mascot134x184.svg);
+    background-image: url(./assets/bb-mascot-144x190.svg);
     background-position: bottom;
     /* object-fit: scale-down; */
     background-size: 80%;
