@@ -4,7 +4,7 @@
 
 <figure class="image"><img style="aspect-ratio:800/679;" src="preview.webp" width="800" height="679"></figure>
 
-Bad Bandages is a simple HTML and CSS framework for testing or creating simple static web pages.
+Bad Bandages is my simple HTML and CSS framework for testing or creating ridiculous simple static web pages.
 
 ## Installation
 
