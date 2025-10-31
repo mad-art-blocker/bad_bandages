@@ -10,7 +10,7 @@ Bad Bandages is my simple HTML and CSS framework for testing or creating ridicul
 
 Create a **named project folder** on your desktop or somewhere else and open it up with a terminal. Download this repo last or set it aside.
 
-Use a package manager  to install [Vite](https://vite.dev/guide/#scaffolding-your-first-vite-project).
+Use a package manager to install [Vite](https://vite.dev/guide/#scaffolding-your-first-vite-project).
 
 ```sh
 # I use Deno:
