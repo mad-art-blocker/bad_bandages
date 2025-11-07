@@ -10,7 +10,7 @@
   /* VIBRANT COLORS: */
   --color-accent: oklab(63.534% 0.1111 0.08699);
   --color-highlight: oklab(61.145% -0.05909 -0.06353 / 0.475);
-  --color-important: oklch(57.321% 0.19998 310.001);
+  --color-important: oklab(57.321% 0.12855 -0.15319);
   --color-bandage: oklab(74.298% 0.01387 0.11041);
   --color-wild: oklab(64.912% 0.08902 -0.08685);
   /* --color-shadow: 0 4px 8px var(--color-swatch1); */
@@ -22,6 +22,12 @@
   --bg3-color: oklab(25.839000000000002% 0.03339 -0.0651);
   --border-color: var(--color-black);
 
+  --gradient: linear-gradient(
+    to bottom,
+    oklab(38.372% 0.04178 -0.08224),
+    oklab(32.562999999999995% 0.0396 -0.08226),
+    oklab(22.913% 0.02786 -0.05577)
+  );
   /* REM SIZES */
 
   /* PIXELS TO REM:
@@ -80,13 +86,14 @@
 }
 
 html {
-  background-color: var(--bg2-color);
+  background: var(--gradient);
+  /* background-color: var(--bg2-color); */
   color: var(--text-dark);
   font-size: 100%;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
