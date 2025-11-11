@@ -4,7 +4,7 @@
 /* h1 in index.css */
 
 /* h1 {
-  color: var(--text-light);
+  color: var(--color-white);
   font-size: clamp(
     1.5rem,
     0.2387820512820512rem + 3.2478632478632483vw,

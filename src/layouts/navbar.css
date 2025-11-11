@@ -1,7 +1,7 @@
 .navbar-main {
   display: flex;
   align-items: center;
-  background-color: var(--bg1-color);
+  background-color: var(--color-swatch2);
   justify-content: center;
   height: var(--80px);
   width: 100%;
@@ -39,7 +39,7 @@
     transition: color 150ms ease;
 
     &:hover {
-      color: var(--text-light);
+      color: var(--color-white);
     }
   }
 }
@@ -49,7 +49,7 @@
 }
 
 .navbar-toggle {
-  background: var(--bg2-color);
+  background: var(--color-swatch3);
   cursor: pointer;
   display: none;
   padding: var(--8px);
@@ -59,7 +59,7 @@
     width: var(--25px);
     height: var(--4px);
     margin: var(--4px) auto;
-    background-color: var(--text-dark);
+    background-color: var(--color-swatch1);
     transition: all 0.3s ease-in-out;
   }
 }

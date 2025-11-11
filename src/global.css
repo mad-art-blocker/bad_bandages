@@ -15,18 +15,13 @@
   --color-wild: oklab(64.912% 0.08902 -0.08685);
   /* --color-shadow: 0 4px 8px var(--color-swatch1); */
 
-  --text-light: var(--color-white);
-  --text-dark: var(--color-swatch1);
-  --bg1-color: var(--color-swatch2);
-  --bg2-color: var(--color-swatch3);
-  --bg3-color: oklab(25.839000000000002% 0.03339 -0.0651);
   --border-color: var(--color-black);
 
   --gradient: linear-gradient(
     to bottom,
-    oklab(38.372% 0.04178 -0.08224),
+    oklab(40.237% 0.04303 -0.07929),
     oklab(32.562999999999995% 0.0396 -0.08226),
-    oklab(22.913% 0.02786 -0.05577)
+    oklab(22.561% 0.02595 -0.05104)
   );
   /* REM SIZES */
 
@@ -87,8 +82,8 @@
 
 html {
   background: var(--gradient);
-  /* background-color: var(--bg2-color); */
-  color: var(--text-dark);
+  /* background-color: var(--color-swatch3); */
+  color: var(--color-swatch1);
   font-size: 100%;
 }
 
@@ -110,28 +105,20 @@ body {
 }
 
 a {
-  color: var(--text-dark);
+  color: var(--color-swatch1);
   font-weight: 600;
 }
 
 .logo-text {
   color: var(--color-bandage);
-  font-size: clamp(
-    1rem,
-    1.5vw,
-    2.5rem
-  );
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
   line-height: 1.1;
   margin-block: 0.2em;
 }
 
 h1 {
-  color: var(--text-light);
-  font-size: clamp(
-    1.5rem,
-    2vw,
-    3rem
-  );
+  color: var(--color-white);
+  font-size: clamp(1.5rem, 2vw, 3rem);
   line-height: 1.1;
   margin-block: 0.2em;
 }
@@ -150,7 +137,7 @@ img {
 /* h1 in the pages CSS */
 
 h2 {
-  color: var(--text-light);
+  color: var(--color-white);
   font-size: 1.4em;
   line-height: 1.1;
 }

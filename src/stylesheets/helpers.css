@@ -23,11 +23,11 @@
 }
 
 .txt-light {
-  color: var(--text-light);
+  color: var(--color-white);
 }
 
 .txt-dark {
-  color: var(--text-dark);
+  color: var(--color-swatch1);
 }
 
 .txt-center {
