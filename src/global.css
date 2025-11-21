@@ -1,18 +1,18 @@
 :root {
-  /* GRAY GRADIENT COLORS: */
+  /* PLUMB SWATCHES FROM LIGHT TO DARK COLORS: */
   /* --color-*: initial; */
-  --color-white: oklab(81.211% 0.02562 -0.02409);
-  --color-swatch1: oklab(69.21300000000001% 0.01603 -0.01781);
-  --color-swatch2: oklab(32.562999999999995% 0.0396 -0.08226);
-  --color-swatch3: oklab(24.805% 0.0332 -0.0691);
-  --color-black: oklab(22.913% 0.02786 -0.05577);
+  --color-white: oklch(81.211% 0.03516 316.765);
+  --color-swatch1: oklch(69.213% 0.02396 311.981);
+  --color-swatch2: oklch(32.563% 0.0913 295.703);
+  --color-swatch3: oklch(24.805% 0.07666 295.665);
+  --color-black: oklch(22.913% 0.06234 296.543);
 
   /* VIBRANT COLORS: */
-  --color-accent: oklab(63.534% 0.1111 0.08699);
-  --color-highlight: oklab(61.145% -0.05909 -0.06353 / 0.475);
-  --color-important: oklab(57.321% 0.12855 -0.15319);
-  --color-bandage: oklab(74.298% 0.01387 0.11041);
-  --color-wild: oklab(64.912% 0.08902 -0.08685);
+  --color-accent: oklch(63.534% 0.14111 38.061);
+  --color-highlight: oklch(61.145% 0.08676 227.071 / 0.475);
+  --color-important: oklch(57.321% 0.19998 310.001);
+  --color-bandage: oklch(74.298% 0.11127 82.842);
+  --color-wild: oklch(64.912% 0.12437 315.706);
   /* --color-shadow: 0 4px 8px var(--color-swatch1); */
 
   --border-color: var(--color-black);
@@ -20,8 +20,8 @@
   --gradient: linear-gradient(
     to bottom,
     oklab(40.237% 0.04303 -0.07929),
-    oklab(32.562999999999995% 0.0396 -0.08226),
-    oklab(22.561% 0.02595 -0.05104)
+    oklch(32.563% 0.0913 295.703),
+    oklch(22.561% 0.05725 296.949)
   );
   /* REM SIZES */
 
@@ -83,12 +83,12 @@
 html {
   background: var(--gradient);
   /* background-color: var(--color-swatch3); */
-  color: var(--color-swatch1);
-  font-size: 100%;
 }
 
 body {
+  color: var(--color-swatch1);
   font-family: "Inter", sans-serif;
+  font-size: 100%;
   overflow-x: hidden;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -109,18 +109,23 @@ a {
   font-weight: 600;
 }
 
-.logo-text {
-  color: var(--color-bandage);
-  font-size: clamp(1rem, 1.5vw, 2.5rem);
+h1 {
+  font-size: clamp(1.2em, 2vw, 1.7em);
   line-height: 1.1;
   margin-block: 0.2em;
+
+  a {
+    color: var(--color-bandage);
+    font-weight: bold;
+  }
 }
 
-h1 {
+h2 {
   color: var(--color-white);
-  font-size: clamp(1.5rem, 2vw, 3rem);
-  line-height: 1.1;
-  margin-block: 0.2em;
+  font-size: clamp(1em, 1.5vw, 1.5em);
+  line-height: 1.2;
+  margin-block: 0.3em;
+  font-weight: 600;
 }
 
 ul {
@@ -132,14 +137,6 @@ img {
   /* shape-margin: calc(var(--10px) + var(--2px)); */
   max-width: 100%;
   vertical-align: middle;
-}
-
-/* h1 in the pages CSS */
-
-h2 {
-  color: var(--color-white);
-  font-size: 1.4em;
-  line-height: 1.1;
 }
 
 /**=========== MEDIA QUERIES 810px ===========**/

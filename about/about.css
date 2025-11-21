@@ -1,16 +1,5 @@
 /* h1 in index.css */
 
-/* h1 {
-  color: var(--color-white);
-  font-size: clamp(
-    1.5rem,
-    0.2387820512820512rem + 3.2478632478632483vw,
-    2.1875rem
-  );
-  line-height: 1.1;
-  margin-block: 0.2em;
-} */
-
 .bg-banner {
   /* background-color: pink; */
   background-repeat: no-repeat;
