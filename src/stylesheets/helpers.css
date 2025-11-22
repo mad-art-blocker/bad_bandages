@@ -3,17 +3,17 @@
 /***** Containers *****/
 .large-container {
   max-width: var(--1440px);
-  margin: auto;
+  margin: var(--48px) auto;
 }
 
 .medium-container {
   max-width: var(--1280px);
-  margin: auto;
+  margin: var(--48px) auto;
 }
 
 .small-container {
   max-width: var(--810px);
-  margin: auto;
+  margin: var(--48px) auto;
 }
 
 /***** GLOBAL HELPERS *****/
@@ -47,9 +47,9 @@
 }
 
 .marginX {
-  padding: 0 2.5rem;
+  padding: 0 var(--48px);
 }
 
 .marginY {
-  padding: 5rem 0;
+  padding: var(--48px) 0;
 }

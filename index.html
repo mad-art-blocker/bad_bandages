@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/home.css" />
-        <title>Bad Bandages | Home</title>
-        <script src="./src/main.js" defer type="module"></script>
-        <script
-            src="./src/scripts/intersectionObservers.js"
-            defer
-            type="module"
-        ></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/home.css" />
+    <title>Bad Bandages | Home</title>
+    <script src="./src/main.js" defer type="module"></script>
+    <script
+      src="./src/scripts/intersectionObservers.js"
+      defer
+      type="module"
+    ></script>
+  </head>
 
-    <body>
-        <!-- MAIN WRAPPER -->
-        <div class="page-container">
-            <!-- HEADER AND NAVBAR -->
-            <header>
-                <nav class="navbar-main">
-                    <div class="navbar-container large-container">
-                        <a
-                            href="/"
-                            class="logo-link"
-                            aria-label="Go to homepage"
-                        >
-                            <img
-                                src="/bad-bandages-logo130x52.svg"
-                                alt="Bad Bandages logo"
-                                height="52"
-                                width="130"
-                            />
-                        </a>
-                        <h1>
-                            <a href="/" class="siteTitleJS">Mad Art Blocker</a>
-                        </h1>
-                        <button
-                            class="navbar-toggle"
-                            aria-label="Toggles Menu List"
-                            type="button"
-                        >
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </button>
-                        <ul class="navbar-menu">
-                            <li><a href="/" aria-current="page">Home</a></li>
-                            <li><a href="./about/">About</a></li>
-                            <li><a href="./bandages/">Bandages</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+  <body>
+    <!-- MAIN WRAPPER -->
+    <div class="page-container">
+      <!-- HEADER AND NAVBAR -->
+      <header>
+        <nav class="navbar-main">
+          <div class="navbar-container large-container">
+            <a
+              href="/"
+              class="logo-link"
+              aria-label="Go to homepage"
+            >
+              <img
+                src="/bad-bandages-logo130x52.svg"
+                alt="Bad Bandages logo"
+                height="52"
+                width="130"
+              />
+            </a>
+            <h1>
+              <a href="/" class="siteTitleJS">Mad Art Blocker</a>
+            </h1>
+            <button
+              class="navbar-toggle"
+              aria-label="Toggles Menu List"
+              type="button"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="/" aria-current="page">Home</a></li>
+              <li><a href="./about/">About</a></li>
+              <li><a href="./bandages/">Bandages</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-            <!-- HERO -->
-            <div class="bg-banner large-container">
-                <section class="intro-box">
-                    <h2>HOME PAGE</h2>
-                    <p>
-                        Welcome to the home page!
-                    </p>
-                    <p>I'm using a large-container</p>
-                </section>
-            </div>
+      <!-- HERO -->
+      <div class="bg-banner large-container">
+        <section class="intro-box">
+          <h2>HOME PAGE</h2>
+          <p>
+            Welcome to the home page!
+          </p>
+          <p>I'm using a large-container</p>
+        </section>
+      </div>
 
-            <!-- MAIN -->
-            <main>
-                <!-- CARDS CONTAINER -->
-                <div class="card-grid large-container marginY" id="observeThis">
-                    <article class="card">
-                        <h3 class="card-title">Card 1</h3>
+      <!-- MAIN -->
+      <main>
+        <!-- CARDS CONTAINER -->
+        <div class="card-grid large-container" id="observeThis">
+          <article class="card">
+            <h3 class="card-title">Card 1</h3>
 
-                        <picture class="card-content">
-                            <source
-                                srcset="./src/assets/bandage-190x80.svg"
-                                media="(min-width: 400px)"
-                            />
-                            <source
-                                srcset="./src/assets/bandage-190x80.webp"
-                                media="(max-width: 400px)"
-                            />
-                            <img
-                                src="./src/assets/bandage-190x80.svg"
-                                alt="bandage card"
-                                width="190"
-                                height="80"
-                                loading="lazy"
-                            />
-                        </picture>
-                        <footer class="txt-center">Bad Bandage</footer>
-                    </article>
-                    <article class="card">
-                        <h3 class="card-title">Card 2</h3>
-                        <p class="card-content">Content for card 2.</p>
-                    </article>
-                    <article class="card">
-                        <h3 class="card-title">Card 3</h3>
-                        <p class="card-content">Content for card 3.</p>
-                    </article>
-                </div>
-            </main>
+            <picture class="card-content">
+              <source
+                srcset="./src/assets/bandage-190x80.svg"
+                media="(min-width: 400px)"
+              />
+              <source
+                srcset="./src/assets/bandage-190x80.webp"
+                media="(max-width: 400px)"
+              />
+              <img
+                src="./src/assets/bandage-190x80.svg"
+                alt="bandage card"
+                width="190"
+                height="80"
+                loading="lazy"
+              />
+            </picture>
+            <footer class="txt-center">Bad Bandage</footer>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Card 2</h3>
+            <p class="card-content">Content for card 2.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Card 3</h3>
+            <p class="card-content">Content for card 3.</p>
+          </article>
         </div>
+      </main>
+    </div>
 
-        <!-- FOOTER -->
-        <footer class="main-footer">
-            <small>
-                <span class="siteTitleJS">|</span> &copy;
-                <span id="thisYearJS"></span> All rights reserved. |
-                <a href="#top"> Privacy Policy | </a> version release: October
-                31, 2025
-            </small>
-        </footer>
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <small>
+        <span class="siteTitleJS">|</span> &copy;
+        <span id="thisYearJS"></span> All rights reserved. |
+        <a href="#top"> Privacy Policy | </a> version release: October 31, 2025
+      </small>
+    </footer>
 
-        <!-- <script type="module" src="./src/home.js"></script> -->
-    </body>
+    <!-- <script type="module" src="./src/home.js"></script> -->
+  </body>
 </html>

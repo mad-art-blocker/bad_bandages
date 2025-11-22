@@ -87,7 +87,7 @@ html {
 
 body {
   color: var(--color-swatch1);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 100%;
   overflow-x: hidden;
   line-height: 1.6;
