@@ -17,6 +17,7 @@ dist-ssr
 
 # Deno/npm/pnpm files
 deno.json
+deno.jsonc
 deno.lock
 package.json
 package-lock.json

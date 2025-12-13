@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('#observeThis');
+  const sections = document.querySelectorAll('.observeThis'); // use a class for multiple
+
+  if (!sections.length) return; // safety check
 
   const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      entries[0].target.classList.add('showMe');
-    } else {
-      entries[0].target.classList.remove('showMe');
-    }
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('showMe');
+      } else {
+        entry.target.classList.remove('showMe');
+      }
+    });
   }, {
-    threshold: 1.0,
+    threshold: 0.5, // 0.5 triggers when 50% of element is visible. Try 1.0 or tweak it.
   });
 
-  observer.observe(section);
+  sections.forEach((section) => observer.observe(section));
 });

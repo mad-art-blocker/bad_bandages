@@ -22,20 +22,6 @@
   height: 72vh;
 }
 
-/* - IntersectionObserver() */
-#observeThis img {
-  opacity: 0;
-  translate: -100%;
-  transition: all 800ms ease;
-  rotate: -360deg;
-}
-
-#observeThis.showMe img {
-  opacity: 1;
-  translate: 0;
-  rotate: none;
-}
-
 /*? HOME & HERO MEDIA QUERIES ?*/
 
 /* Smallest to the largest */

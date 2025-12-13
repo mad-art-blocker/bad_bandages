@@ -8,6 +8,11 @@
     <title>Bandages Page</title>
 
     <script type="module" src="../src/main.js" defer></script>
+    <script
+      src="../src/scripts/intersectionObservers.js"
+      defer
+      type="module"
+    ></script>
   </head>
 
   <body>
@@ -19,8 +24,7 @@
           <div class="navbar-container">
             <a
               href="/"
-              class="logo-link"
-              aria-label="Go to homepage"
+              aria-label="Go to home page"
             >
               <img
                 src="/bad-bandages-logo130x52.svg"
@@ -69,8 +73,26 @@
           <p class="card-content">Content for card 1.</p>
         </article>
         <article class="card">
-          <h3 class="card-title">Card 2</h3>
-          <p class="card-content">Content for card 2.</p>
+          <h3 class="card-title">Card 1</h3>
+
+          <picture class="card-content observeThis">
+            <source
+              srcset="../src/assets/bandage-190x80.svg"
+              media="(min-width: 400px)"
+            />
+            <source
+              srcset="../src/assets/bandage-190x80.webp"
+              media="(max-width: 400px)"
+            />
+            <img
+              src="../src/assets/bandage-190x80.svg"
+              alt="bandage card"
+              width="190"
+              height="80"
+              loading="lazy"
+            />
+          </picture>
+          <footer class="txt-center">Bad Bandage</footer>
         </article>
         <article class="card">
           <h3 class="card-title">Card 3</h3>
@@ -112,7 +134,7 @@
           <p>
             I'm using CSS Grid in the main section, flanked by two sidebars to
             be filled with "helpful" links to patch up my otherwise unimpressive
-            page. There's also a drawer for quick notes, a cheatsheet, and other
+            page. There's also a drawer for quick notes, links, and or other
             useful resources.
           </p>
         </main>

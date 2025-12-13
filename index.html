@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="./src/home.css" />
     <title>Bad Bandages | Home</title>
     <script src="./src/main.js" defer type="module"></script>
-    <script
-      src="./src/scripts/intersectionObservers.js"
-      defer
-      type="module"
-    ></script>
   </head>
 
   <body>
@@ -23,8 +18,7 @@
           <div class="navbar-container large-container">
             <a
               href="/"
-              class="logo-link"
-              aria-label="Go to homepage"
+              aria-label="Go to home page"
             >
               <img
                 src="/bad-bandages-logo130x52.svg"
@@ -68,28 +62,10 @@
       <!-- MAIN -->
       <main>
         <!-- CARDS CONTAINER -->
-        <div class="card-grid large-container" id="observeThis">
+        <div class="card-grid large-container">
           <article class="card">
             <h3 class="card-title">Card 1</h3>
-
-            <picture class="card-content">
-              <source
-                srcset="./src/assets/bandage-190x80.svg"
-                media="(min-width: 400px)"
-              />
-              <source
-                srcset="./src/assets/bandage-190x80.webp"
-                media="(max-width: 400px)"
-              />
-              <img
-                src="./src/assets/bandage-190x80.svg"
-                alt="bandage card"
-                width="190"
-                height="80"
-                loading="lazy"
-              />
-            </picture>
-            <footer class="txt-center">Bad Bandage</footer>
+            <p class="card-content">Content for card 1.</p>
           </article>
           <article class="card">
             <h3 class="card-title">Card 2</h3>
