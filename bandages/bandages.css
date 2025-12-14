@@ -23,16 +23,16 @@
   text-align: center;
 }
 
-/** - IntersectionObserver() **/
+/** - src/scripts/intersectionObservers.js - Animation **/
 
-.observeThis {
+.observeThisJS {
   opacity: 0;
   translate: -100%;
   transition: all 800ms ease;
   rotate: -360deg;
 }
 
-.observeThis.showMe {
+.showMe {
   opacity: 1;
   translate: 0;
   rotate: none;

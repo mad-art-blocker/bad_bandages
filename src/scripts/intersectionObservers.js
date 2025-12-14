@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.observeThis'); // use a class for multiple
+  const sections = document.querySelectorAll('.observeThisJS'); // use a class for multiple
 
   if (!sections.length) return; // safety check
 

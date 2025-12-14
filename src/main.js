@@ -21,8 +21,8 @@ for (let it = 0; it < injectTitle.length; it++) {
 // document.querySelector(".subTitlesJS").textContent = titlesKeys.subTitle;
 
 // HAMBURGER MENU TOGGLE
-const navbarToggle = document.querySelector('.navbar-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
+const navbarToggle = document.querySelector('.navbar-toggleJS');
+const navbarMenu = document.querySelector('.navbar-menuJS');
 
 navbarToggle.addEventListener('click', () => {
   navbarToggle.classList.toggle('active');

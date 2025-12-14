@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-.navbar-menu {
+.navbar-menuJS {
   display: flex;
   text-align: center;
   gap: var(--48px);
@@ -44,11 +44,11 @@
   }
 }
 
-.navbar-menu.active {
+.navbar-menuJS.active {
   display: flex;
 }
 
-.navbar-toggle {
+.navbar-toggleJS {
   background: var(--color-swatch3);
   cursor: pointer;
   display: none;
@@ -65,13 +65,13 @@
 }
 
 /* Hamburger menu transforms to an "X" */
-.navbar-toggle.active .bar:nth-child(1) {
+.navbar-toggleJS.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-.navbar-toggle.active .bar:nth-child(2) {
+.navbar-toggleJS.active .bar:nth-child(2) {
   opacity: 0;
 }
-.navbar-toggle.active .bar:nth-child(3) {
+.navbar-toggleJS.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -115,7 +115,7 @@
     backdrop-filter: none;
   }
 
-  .navbar-menu {
+  .navbar-menuJS {
     flex-direction: column;
     align-items: flex-start;
     backdrop-filter: blur(10px);
@@ -130,7 +130,7 @@
     top: 0;
   }
 
-  .navbar-toggle {
+  .navbar-toggleJS {
     display: block;
     z-index: 101;
   }
