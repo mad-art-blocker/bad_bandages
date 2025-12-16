@@ -132,8 +132,9 @@ ul {
   list-style: none;
 }
 
-img {
+img, picture, svg {
   /* aspect-ratio: 9 / 16; */
+  /* display: block; */
   /* shape-margin: calc(var(--10px) + var(--2px)); */
   max-width: 100%;
   vertical-align: middle;
