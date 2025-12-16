@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "devfirefox": "BROWSER=firefox vite",
+    "denolintfix": "deno lint --fix",
+    "denosvelteFormat": "deno fmt",
+    "denoutdated": "deno outdated",
+    "denoupsemver": "deno update",
+    "denouplatest": "deno update --latest",
+    "denocleancache": "deno clean"
+    // "delshit": "rm -rf .git dist",
+    // "delpackages": "npx npkill"
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "singleQuote": true
+  }
+}

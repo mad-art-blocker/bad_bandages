@@ -60,34 +60,6 @@ npm create vite@latest .
 Read more about Multi-Page App
 [Vite Config](https://vite.dev/guide/build.html#multi-page-app)
 
-## Optional Deno Scripts
-
-// Skip this if you're using another package manager.
-
-// Place below the other scripts inside your package.json or deno.json (Delete
-the comments.):
-
-```json
-  "scripts": {
-
-//  Opens firefox/chrome broswer or change it to another. dev script opens up the default browser or take it out. (Works on Visual Studio Code only?)
-
-    "dev": "vite",
-    "devchrome": "BROWSER=chrome vite",
-    "devfirefox": "BROWSER=firefox vite",
-  ...,
-  ...,
-  ...,
-
-  // Deno Scripts:
-
-    "upgradeDepend": "deno outdated --update --latest", // Updates all dependencies.
-    "formatter": "deno fmt --single-quote", // Formatting and to change double to single qoutes.
-    "denolintfix": "deno lint --fix", // Linting
-    "delete": "rm -rf dist", // Deletes the "dist" folder after previewing the build.
-    "deletepackages": "npx npkill" // deletes node_modules folder (packages).
-  },
-```
 
 ---
 
