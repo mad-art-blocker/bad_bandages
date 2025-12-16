@@ -53,6 +53,7 @@ npm create vite@latest .
 | preview.webp
 | README.md
 | vite.config.js
+| deno.jsonc
 | src - folder
 | node_modules - folder
 ```
