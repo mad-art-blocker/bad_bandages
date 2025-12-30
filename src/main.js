@@ -1,8 +1,9 @@
-import './layouts/navbar.css';
-import './layouts/footer.css';
+import './stylesheets/ui-css/navbar.css';
+import './stylesheets/ui-css/footer.css';
+import './stylesheets/ui-css/villain.css';
 import './stylesheets/helpers.css';
 
-// Always keep global.css at the end to ensure it overrides other styles, specially for media queries.
+// Always keep global.css at the end to ensure it overrides other styles, especially for media queries.
 import './global.css';
 
 // WEBSITE TITLES PROPERTIES:

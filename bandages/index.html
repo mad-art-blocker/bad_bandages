@@ -24,53 +24,48 @@
   <body>
     <!-- MAIN WRAPPER -->
     <div class="page-container">
-      <!-- HEADER AND NAVBAR -->
-      <header>
-        <nav class="navbar-main">
-          <div class="navbar-container">
-            <a
-              href="/"
-              aria-label="Go to home page"
-            >
-              <img
-                src="/bad-bandages-logo130x52.svg"
-                alt="Bad Bandages logo"
-                height="52"
-                width="130"
-              />
-            </a>
+      <!-- NAVBAR -->
+      <div class="navbar-main">
+        <nav class="navbar-container">
+          <a href="/" aria-label="Go to home page">
+            <img
+              src="/bad-bandages-logo130x52.svg"
+              alt="Bad Bandages logo"
+              height="52"
+              width="130"
+            />
+          </a>
 
-            <h1>
-              <a href="/" class="siteTitleJS">...</a>
-            </h1>
-            <button
-              class="navbar-toggleJS"
-              aria-label="Toggles Menu List"
-              type="button"
-            >
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-            <ul class="navbar-menuJS">
-              <li><a href="/">Home</a></li>
-              <li><a href="../about/">About</a></li>
-              <li>
-                <a href="#top" aria-current="page">Bandages</a>
-              </li>
-            </ul>
-          </div>
+          <h1>
+            <a href="/" class="siteTitleJS">...</a>
+          </h1>
+          <button
+            class="navbar-toggleJS"
+            aria-label="Toggles Menu List"
+            type="button"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="navbar-menuJS">
+            <li><a href="/">Home</a></li>
+            <li><a href="../about/">About</a></li>
+            <li>
+              <a href="#top" aria-current="page">Bandages</a>
+            </li>
+          </ul>
         </nav>
-      </header>
+      </div>
 
       <!-- HERO -->
-      <div class="bg-banner">
+      <header class="bg-banner">
         <section class="intro-box">
           <h2>Bandageroos</h2>
           <p>Welcome to the Side-Bars page!</p>
           <p>I'm using no-container class</p>
         </section>
-      </div>
+      </header>
 
       <!-- CARDS CONTAINER -->
       <div class="card-grid large-container marginY">
@@ -113,24 +108,15 @@
             <summary><strong>Sidebar 1</strong></summary>
             <ul>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-1</a>
               </li>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-2</a>
               </li>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-3</a>
               </li>
             </ul>
@@ -149,24 +135,15 @@
             <summary><strong>Sidebar 2</strong></summary>
             <ul>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-1</a>
               </li>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-2</a>
               </li>
               <li>
-                <a
-                  href="#top"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="#top" target="_blank" rel="noopener noreferrer"
                 >Link-3</a>
               </li>
             </ul>
@@ -176,11 +153,7 @@
 
       <!-- DIV DRAWER -->
       <div class="div-drawer">
-        <button
-          class="drawer-toggle"
-          onclick="toggleDrawer()"
-          role="button"
-        >
+        <button class="drawer-toggle" onclick="toggleDrawer()" role="button">
           ☰
         </button>
       </div>
@@ -192,18 +165,19 @@
           <p>
             This is a sliding drawer from the bottom of the Footer!
           </p>
-          <button
-            class="drawer-button"
-            onclick="toggleDrawer()"
-            role="button"
-          >
+          <button class="drawer-button" onclick="toggleDrawer()" role="button">
             Close Drawer
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Footer is not part of the grid layout -->
+    <!-- VILLAIN CONTAINER is not part of the page-container or grid layout -->
+    <div class="villain txt-center">
+      <h3>The Villain Container</h3>
+    </div>
+
+    <!-- FOOTER is not part of the page-container or grid layout -->
     <footer class="main-footer">
       <small>
         <span class="siteTitleJS">|</span> &copy;

@@ -18,44 +18,39 @@
   <body>
     <!-- MAIN WRAPPER -->
     <div class="page-container">
-      <!-- HEADER AND NAVBAR -->
-      <header>
-        <nav class="navbar-main">
-          <div class="navbar-container large-container">
-            <a
-              href="/"
-              aria-label="Go to home page"
-            >
-              <img
-                src="/bad-bandages-logo130x52.svg"
-                alt="Bad Bandages logo"
-                height="52"
-                width="130"
-              />
-            </a>
-            <h1>
-              <a href="/" class="siteTitleJS">Mad Art Blocker</a>
-            </h1>
-            <button
-              class="navbar-toggleJS"
-              aria-label="Toggles Menu List"
-              type="button"
-            >
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-            <ul class="navbar-menuJS">
-              <li><a href="/" aria-current="page">Home</a></li>
-              <li><a href="./about/">About</a></li>
-              <li><a href="./bandages/">Bandages</a></li>
-            </ul>
-          </div>
+      <!--NAVBAR -->
+      <div class="navbar-main">
+        <nav class="navbar-container large-container">
+          <a href="/" aria-label="Go to home page">
+            <img
+              src="/bad-bandages-logo130x52.svg"
+              alt="Bad Bandages logo"
+              height="52"
+              width="130"
+            />
+          </a>
+          <h1>
+            <a href="/" class="siteTitleJS">Mad Art Blocker</a>
+          </h1>
+          <button
+            class="navbar-toggleJS"
+            aria-label="Toggles Menu List"
+            type="button"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="navbar-menuJS">
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="./about/">About</a></li>
+            <li><a href="./bandages/">Bandages</a></li>
+          </ul>
         </nav>
-      </header>
+      </div>
 
       <!-- HERO -->
-      <div class="bg-banner large-container">
+      <header class="bg-banner large-container">
         <section class="intro-box">
           <h2>HOME PAGE</h2>
           <p>
@@ -63,7 +58,7 @@
           </p>
           <p>I'm using a large-container</p>
         </section>
-      </div>
+      </header>
 
       <!-- MAIN -->
       <main>
@@ -85,7 +80,12 @@
       </main>
     </div>
 
-    <!-- FOOTER -->
+    <!-- VILLAIN CONTAINER is not part of the page-container -->
+    <div class="villain txt-center large-container">
+      <h3>The Villain Container</h3>
+    </div>
+
+    <!-- FOOTER is not part of the page-container -->
     <footer class="main-footer">
       <small>
         <span class="siteTitleJS">|</span> &copy;
