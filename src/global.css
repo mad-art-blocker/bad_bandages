@@ -3,7 +3,7 @@
   /* --color-*: initial; */
   --color-white: oklch(81.211% 0.03516 316.765);
   --color-swatch1: oklch(69.213% 0.02396 311.981);
-  --color-swatch2: oklch(32.563% 0.0913 295.703);
+  --color-swatch2: oklch(32.563% 0.0913 295.703 / 0.940);
   --color-swatch3: oklch(24.805% 0.07666 295.665);
   --color-black: oklch(22.913% 0.06234 296.543);
 
@@ -13,9 +13,10 @@
   --color-important: oklch(57.321% 0.19998 310.001);
   --color-bandage: oklch(74.298% 0.11127 82.842);
   --color-wild: oklch(64.912% 0.12437 315.706);
-  /* --color-shadow: 0 4px 8px var(--color-swatch1); */
 
-  --border-color: var(--color-black);
+  /* box-shadow: 0px 4px 4px var(--color-shadow); */
+  --color-border: var(--color-black);
+  --color-shadow: var(--color-black);
 
   --gradient: linear-gradient(
     to bottom,
@@ -57,7 +58,7 @@
   /* calc(var(--300px) + var(--75px)); */
   --810px: 50.625rem;
   --1280px: 80rem;
-  --1440px: 80rem;
+  --1440px: 90rem;
 
   /* Calc Usage: */
 
@@ -149,6 +150,6 @@ img, picture, svg {
 
 @media (max-width: 50.625rem) {
   .page-container {
-    border: var(--10px) solid var(--border-color);
+    border: var(--10px) solid var(--color-border);
   }
 }

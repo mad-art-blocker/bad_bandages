@@ -8,11 +8,11 @@
 
 .card {
   background-color: var(--color-swatch2);
+  box-shadow: 0px 4px 4px var(--color-shadow);
   display: flex;
   flex-direction: column;
   border-radius: var(--6px);
   padding: var(--10px);
-
   /* overflow: hidden; */
 
   /* transition: box-shadow 0.2s; */

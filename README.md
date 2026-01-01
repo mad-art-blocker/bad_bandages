@@ -1,5 +1,4 @@
 ---
-
 <figure class="image"><img style="aspect-ratio:800/679;" src="preview.webp" width="800" height="679"></figure>
 
 Bad Bandages is my simple HTML and CSS framework for testing or creating
@@ -21,7 +20,7 @@ deno init --npm vite .
 npm create vite@latest .
 ```
 
-1. Choose Vanilla as a Framework
+1. Choose Vanilla as a Framework and as rolldown instead of rollup.
 
 2. Vanilla JavaScript
 
@@ -60,8 +59,6 @@ npm create vite@latest .
 
 Read more about Multi-Page App
 [Vite Config](https://vite.dev/guide/build.html#multi-page-app)
-
-
 ---
 
 ## Optional Plugins
@@ -79,7 +76,7 @@ Import the plugin:
 ```js
 //vite.config.js
 
-import simpleHtmlPlugin from 'vite-plugin-simple-html';
+import simpleHtmlPlugin from "vite-plugin-simple-html";
 ```
 
 Add it to your vite.config.js file, plugin's array:

@@ -12,7 +12,7 @@ export default defineConfig({
     open: true,
   },
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, './about/index.html'),
