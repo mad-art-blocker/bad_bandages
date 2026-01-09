@@ -1,6 +1,6 @@
 /* button {
   border: none;
-  border-radius: 20px;
+  border-radius: var(--global-bradius);
   background-color: #a673cf;
   color: white;
   padding: 10px 30px;

@@ -18,12 +18,15 @@
   --color-border: var(--color-black);
   --color-shadow: var(--color-black);
 
-  --gradient: linear-gradient(
-    to bottom,
-    oklab(40.237% 0.04303 -0.07929),
-    oklch(32.563% 0.0913 295.703),
-    oklch(22.561% 0.05725 296.949)
-  );
+  --gradient: linear-gradient(to bottom,
+      oklab(40.237% 0.04303 -0.07929),
+      oklch(32.563% 0.0913 295.703),
+      oklch(22.561% 0.05725 296.949));
+
+  /* Global Border Radius */
+  --global-bradius: var(--8px);
+
+
   /* REM SIZES */
 
   /* PIXELS TO REM:
@@ -137,7 +140,9 @@ ul {
   list-style: none;
 }
 
-img, picture, svg {
+img,
+picture,
+svg {
   /* aspect-ratio: 9 / 16; */
   /* display: block; */
   /* shape-margin: calc(var(--10px) + var(--2px)); */
