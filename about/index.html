@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./about.css" />
-    <title>About Page</title>
-    <script type="module" src="../src/main.js" defer></script>
-  </head>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <body>
-    <!-- MAIN WRAPPER -->
-    <div class="page-container">
-      <!-- NAVBAR -->
-      <div class="navbar-main">
-        <nav class="navbar-container small-container">
-          <a href="/" aria-label="Go to home page">
-            <img
-              src="/bad-bandages-logo130x52.svg"
-              alt="Bad Bandages logo"
-              height="52"
-              width="130"
-            />
-          </a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./about.css" />
+  <title>About Page</title>
+  <script type="module" src="../src/main.js" defer></script>
+</head>
 
-          <h1>
-            <a href="/" class="siteTitleJS">...</a>
-          </h1>
-          <button
-            class="navbar-toggleJS"
-            aria-label="Toggles Menu List"
-            type="button"
-          >
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul class="navbar-menuJS">
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="#top" aria-current="page">About</a>
-            </li>
-            <li><a href="../bandages/">Bandages</a></li>
-          </ul>
-        </nav>
-      </div>
+<body>
+  <!-- MAIN WRAPPER -->
+  <div class="page-container">
+    <!-- NAVBAR -->
+    <div class="navbar-main">
+      <nav class="navbar-container small-container">
+        <a href="/" aria-label="Go to home page">
+          <img src="/bad-bandages-logo130x52.svg" alt="Bad Bandages logo" height="52" width="130" />
+        </a>
 
-      <!-- HERO -->
-      <header class="bg-banner small-container">
-        <section class="intro-box">
-          <h2>ABOUT PAGE</h2>
-          <p>Welcome to the About page!</p>
-          <p>I'm using a small-container class.</p>
-        </section>
-      </header>
-      <main>
-        <p class="txt-center">
-          You can remove the "large, medium, small containers" class in any
-          section block to make it 100% wide.
-        </p>
-      </main>
+        <h1>
+          <a href="/" class="siteTitleJS">...</a>
+        </h1>
+        <button class="navbar-toggleJS" aria-label="Toggles Menu List" type="button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menuJS">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#top" aria-current="page">About</a>
+          </li>
+          <li><a href="../bandages/">Bandages</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <!-- VILLAIN CONTAINER is not part of the page-container -->
-    <div class="villain txt-center small-container">
-      <h3>The Villain Container</h3>
-    </div>
+    <!-- HERO -->
+    <header class="bg-banner test small-container">
+      <section class="intro-box">
+        <h2>ABOUT PAGE</h2>
+        <p>Welcome to the About page!</p>
+        <p>I'm using a small-container class.</p>
+      </section>
+    </header>
+    <p class="txt-center">
+      Remove the test class from the HTML header container. The red border is
+      only for visual feedback, and the class can be used anywhere.
+    </p>
 
-    <!-- FOOTER is not part of the page-container -->
-    <footer class="main-footer">
-      <small>
-        <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved. |
-        <a href="#top"> Privacy Policy | </a> version release: October 31, 2025
-      </small>
-    </footer>
+    <main>
+      <p class="txt-center">
+        You can remove the "large, medium, small containers" class in any
+        section block to make it 100% wide.
+      </p>
+    </main>
+  </div>
 
-    <!-- <script type="module" src="./about.js"></script> -->
-  </body>
+  <!-- VILLAIN CONTAINER is not part of the page-container -->
+  <div class="villain txt-center small-container">
+    <h3>The Villain Container</h3>
+  </div>
+
+  <!-- FOOTER is not part of the page-container -->
+  <footer class="main-footer">
+    <small>
+      <span class="siteTitleJS">|</span> &copy;
+      <span id="thisYearJS"></span> All rights reserved. |
+      <a href="#top"> Privacy Policy | </a> version release: October 31, 2025
+    </small>
+  </footer>
+
+  <!-- <script type="module" src="./about.js"></script> -->
+</body>
+
 </html>

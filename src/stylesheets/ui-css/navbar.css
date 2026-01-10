@@ -31,9 +31,11 @@
     font-size: calc(var(--10px) + var(--4px));
     /* Long words or paragraphs wont wrap: */
     white-space: nowrap;
-    font-size: clamp(0.875rem,
-        0.6346153846153846rem + 1.0256410256410255vw,
-        1.15rem);
+    font-size: clamp(
+      0.875rem,
+      0.6346153846153846rem + 1.0256410256410255vw,
+      1.15rem
+    );
     transition: color 150ms ease;
 
     &:hover {

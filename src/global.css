@@ -18,14 +18,12 @@
   --color-border: var(--color-black);
   --color-shadow: var(--color-black);
 
-  --gradient: linear-gradient(to bottom,
-      oklab(40.237% 0.04303 -0.07929),
-      oklch(32.563% 0.0913 295.703),
-      oklch(22.561% 0.05725 296.949));
-
-  /* Global Border Radius */
-  --global-bradius: var(--8px);
-
+  --gradient: linear-gradient(
+    to bottom,
+    oklab(40.237% 0.04303 -0.07929),
+    oklch(32.563% 0.0913 295.703),
+    oklch(22.561% 0.05725 296.949)
+  );
 
   /* REM SIZES */
 
@@ -58,22 +56,21 @@
 
   /* CONTAINER SIZES */
 
-  /* calc(var(--300px) + var(--75px)); */
   --810px: 50.625rem;
   --1280px: 80rem;
   --1440px: 90rem;
 
   /* Calc Usage: */
-
   /* calc(var(--4px) + var(--2px)); */
   /* calc(var(--400px) + var(--100px) + var(--100px); */
-  /* Negative numbers work-around?: */
-  /* calc(var(--300px) * -1); */
 
   /* Animation Transitions 
   Usage: transition: var(--main-transition);
   */
   --main-transition: all 0.4s linear;
+
+  /* Global Border Radius */
+  --global-bradius: var(--8px);
 }
 
 *,
