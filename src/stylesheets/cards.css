@@ -11,7 +11,6 @@
   box-shadow: 0px 4px 4px var(--color-shadow);
   display: flex;
   flex-direction: column;
-  border-radius: var(--global-bradius);
   padding: var(--10px);
   /* overflow: hidden; */
 
@@ -31,7 +30,6 @@
 
 .card-content {
   color: var(--color-swatch1);
-  border-radius: var(--global-bradius);
   margin: auto;
 
   img {

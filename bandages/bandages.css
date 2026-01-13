@@ -17,7 +17,7 @@
 
 .intro-box {
   transform: translateX(500px) rotate(30deg) translateY(350px);
-  /* max-width: fit-content; */
+  max-width: fit-content;
   width: var(--300px);
   /* padding: var(--10px); */
   text-align: center;
@@ -49,7 +49,6 @@
 .drawer-toggle {
   background-color: var(--color-black);
   color: var(--color-swatch1);
-  border: none;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
@@ -81,10 +80,7 @@
 
 .drawer-button {
   background-color: var(--color-bandage);
-  /* color: white; */
-  border: none;
   padding: var(--10px) var(--20px);
-  /* font-size: 1.5em; */
   cursor: pointer;
 
   &:hover {
@@ -92,34 +88,63 @@
   }
 }
 
-/*? bandages & HERO MEDIA QUERIES ?*/
+/*? BANDAGES MEDIA QUERIES ?*/
 
-/* Smallest to the largest */
+/* Largest to smallest */
+
+/**=========== MEDIA QUERIES 1024px ===========**/
+/* 64rem */
+
+/*? Hero Section ?*/
+@media (max-width: 64rem) {
+  .intro-box {
+    transform: translateX(300px) translateY(150px);
+    width: var(--300px);
+    text-align: center;
+  }
+}
+
+/*? Hero Section ?*/
+@media (max-width: 64rem) {
+  .bg-banner {
+    height: 50dvh;
+  }
+}
+
+/**=========== MEDIA QUERIES 825px ===========**/
+/* 51.563rem */
+
+/*? Hero Section ?*/
+@media (max-width: 51.563rem) {
+  .intro-box {
+    margin: var(--64px) auto;
+    transform: none;
+  }
+}
+
+/*? Hero Section ?*/
+@media (max-width: 51.563rem) {
+  .bg-banner {
+    background-image: url(../src/assets/bb-mascot-144x190.svg);
+    background-position: bottom;
+    background-size: 60%;
+    height: 68dvh;
+  }
+}
+
+/**=========== MEDIA QUERIES 810px ===========**/
+
+/* 50.625rem */
+
+/**=========== MEDIA QUERIES 768px ===========**/
+/* 48rem */
+
 /**=========== MEDIA QUERIES 480px ===========**/
 /* 30rem */
 
 /*? Hero Section ?*/
 @media (max-width: 30rem) {
   .bg-banner {
-    background-image: url(../src/assets/bb-mascot-144x190.svg);
-    background-position: bottom;
-    /* object-fit: scale-down; */
-    background-size: 80%;
-    height: 70dvh;
-  }
-}
-
-/**=========== MEDIA QUERIES 768px ===========**/
-/* 48rem */
-
-/**=========== MEDIA QUERIES 810px ===========**/
-
-/* 50.625rem */
-
-/*? Hero Section ?*/
-@media (max-width: 50.625rem) {
-  .intro-box {
-    margin: var(--100px) auto;
-    transform: none;
+    height: 60dvh;
   }
 }

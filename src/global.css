@@ -20,10 +20,14 @@
 
   --gradient: linear-gradient(
     to bottom,
-    oklab(40.237% 0.04303 -0.07929),
-    oklch(32.563% 0.0913 295.703),
-    oklch(22.561% 0.05725 296.949)
+    /* oklch(43.068% 0.14744 295.752), */ oklch(36.807% 0.09884 295.177),
+    oklch(21.175% 0.06131 296.68)
   );
+
+  /* Animation Transitions 
+  Usage: transition: var(--main-transition);
+  */
+  --main-transition: all 0.4s linear;
 
   /* REM SIZES */
 
@@ -55,28 +59,19 @@
   --700px: 43.75rem;
 
   /* CONTAINER SIZES */
-
   --810px: 50.625rem;
   --1280px: 80rem;
   --1440px: 90rem;
 
   /* Calc Usage: */
   /* calc(var(--4px) + var(--2px)); */
-  /* calc(var(--400px) + var(--100px) + var(--100px); */
-
-  /* Animation Transitions 
-  Usage: transition: var(--main-transition);
-  */
-  --main-transition: all 0.4s linear;
-
-  /* Global Border Radius */
-  --global-bradius: var(--8px);
 }
 
 *,
 *::before,
 *::after {
   border: none;
+  border-radius: var(--8px);
   box-sizing: border-box;
   margin: 0;
   outline: none;
@@ -105,7 +100,6 @@ body {
 }
 
 .page-container {
-  border: none;
   min-height: 100dvh;
 }
 

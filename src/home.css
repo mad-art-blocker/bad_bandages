@@ -3,7 +3,7 @@
 /* h1 in index.css */
 
 .intro-box {
-  transform: translateX(12rem) translateY(200px);
+  transform: translateX(5rem) translateY(200px);
   /* max-width: fit-content; */
   width: var(--300px);
   /* padding: var(--10px); */
@@ -22,33 +22,44 @@
   height: 72vh;
 }
 
-/*? HOME & HERO MEDIA QUERIES ?*/
+/*? HOME MEDIA QUERIES ?*/
 
-/* Smallest to the largest */
+/* Largest to smallest */
+
+/**=========== MEDIA QUERIES 825px ===========**/
+/* 51.563rem */
+
+/*? Hero Section ?*/
+@media (max-width: 51.563rem) {
+  .intro-box {
+    margin: var(--64px) auto;
+    transform: none;
+  }
+}
+
+/**=========== MEDIA QUERIES 810px ===========**/
+
+/* 50.625rem */
+
+/**=========== MEDIA QUERIES 768px ===========**/
+/* 48rem */
+
+/*? Hero Section ?*/
+@media (max-width: 48rem) {
+  .bg-banner {
+    background-image: url(./assets/bb-mascot-144x190.svg);
+    background-position: bottom;
+    background-size: 60%;
+    height: 69dvh;
+  }
+}
+
 /**=========== MEDIA QUERIES 480px ===========**/
 /* 30rem */
 
 /*? Hero Section ?*/
 @media (max-width: 30rem) {
   .bg-banner {
-    background-image: url(./assets/bb-mascot-144x190.svg);
-    background-position: bottom;
-    /* object-fit: scale-down; */
-    background-size: 80%;
-    height: 70dvh;
-  }
-}
-
-/**=========== MEDIA QUERIES 768px ===========**/
-/* 48rem */
-/**=========== MEDIA QUERIES 810px ===========**/
-
-/* 50.625rem */
-
-/*? Hero Section ?*/
-@media (max-width: 50.625rem) {
-  .intro-box {
-    margin: 100px auto;
-    transform: none;
+    height: 55dvh;
   }
 }

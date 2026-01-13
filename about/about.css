@@ -17,25 +17,9 @@
   text-align: center;
 }
 
-/*? ABOUT & HERO MEDIA QUERIES ?*/
-/* Smallest to the largest */
+/*? ABOUT MEDIA QUERIES ?*/
 
-/**=========== MEDIA QUERIES 480px ===========**/
-/* 30rem */
-
-/*? Hero Section ?*/
-@media (max-width: 30rem) {
-  .bg-banner {
-    background-image: url(../src/assets/bb-mascot-144x190.svg);
-    background-position: bottom;
-    /* object-fit: scale-down; */
-    background-size: 65%;
-    height: 60dvh;
-  }
-}
-
-/**=========== MEDIA QUERIES 768px ===========**/
-/* 48rem */
+/* Largest to smallest */
 /**=========== MEDIA QUERIES 810px ===========**/
 
 /* 50.625rem */
@@ -43,7 +27,30 @@
 /*? Hero Section ?*/
 @media (max-width: 50.625rem) {
   .intro-box {
-    margin: var(--100px) auto;
+    margin: 0 auto;
     transform: none;
+  }
+}
+
+/**=========== MEDIA QUERIES 768px ===========**/
+/* 48rem */
+
+/*? Hero Section ?*/
+@media (max-width: 48rem) {
+  .bg-banner {
+    background-image: url(../src/assets/bb-mascot-144x190.svg);
+    background-position: bottom;
+    background-size: 60%;
+    height: 69dvh;
+  }
+}
+
+/**=========== MEDIA QUERIES 480px ===========**/
+/* 30rem */
+
+/*? Hero Section ?*/
+@media (max-width: 30rem) {
+  .bg-banner {
+    height: 55dvh;
   }
 }

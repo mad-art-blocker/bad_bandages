@@ -13,7 +13,6 @@
 .navbar1 {
   grid-area: navb1;
   background-color: var(--color-black);
-  border-radius: var(--global-bradius);
   padding: var(--16px);
 }
 
@@ -25,7 +24,6 @@ main {
 .navbar2 {
   grid-area: navb2;
   background-color: var(--color-black);
-  border-radius: var(--global-bradius);
   padding: var(--16px);
 }
 

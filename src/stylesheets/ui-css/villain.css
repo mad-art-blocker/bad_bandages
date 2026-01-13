@@ -1,6 +1,5 @@
 .villain {
   background-color: var(--color-swatch2);
   padding: var(--10px);
-  border-radius: var(--global-bradius);
   height: fit-content;
 }
