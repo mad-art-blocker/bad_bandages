@@ -35,7 +35,8 @@
 }
 
 .highlight {
-  color: orange;
+  background-color: var(--color-highlight);
+  padding: var(--2px);
 }
 
 .paddingX {

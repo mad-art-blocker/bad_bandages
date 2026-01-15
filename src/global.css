@@ -1,27 +1,32 @@
 :root {
-  /* PLUMB SWATCHES FROM LIGHT TO DARK COLORS: */
+  /* PURPLE SWATCHES FROM LIGHT TO DARK COLORS: */
   /* --color-*: initial; */
+  --color-swatch0: oklch(27.498% 0.07413 297.016 / 0.603);
   --color-white: oklch(81.211% 0.03516 316.765);
   --color-swatch1: oklch(69.213% 0.02396 311.981);
-  --color-swatch2: oklch(32.563% 0.0913 295.703 / 0.940);
-  --color-swatch3: oklch(24.805% 0.07666 295.665);
-  --color-black: oklch(22.913% 0.06234 296.543);
+  --color-swatch2: oklch(37.003% 0.10958 295.981);
+  --color-swatch3: oklch(30.113% 0.08289 296.836);
+  --color-black: oklch(24.895% 0.06671 296.636);
 
-  /* VIBRANT COLORS: */
-  --color-accent: oklch(63.534% 0.14111 38.061);
-  --color-highlight: oklch(61.145% 0.08676 227.071 / 0.475);
-  --color-important: oklch(57.321% 0.19998 310.001);
+  /* OTHER SWATCHES: */
+  --color-accent: oklch(61.468% 0.11785 37.422);
   --color-bandage: oklch(74.298% 0.11127 82.842);
-  --color-wild: oklch(64.912% 0.12437 315.706);
+  --color-wild: oklch(65.019% 0.12486 316.263);
+  --color-highlight: oklch(63.69% 0.11266 316.188 / 0.171);
+  /* --color-important: oklch(57.321% 0.19998 310.001); */
 
-  /* box-shadow: 0px 4px 4px var(--color-shadow); */
-  --color-border: var(--color-black);
+  --color-bg0: var(--color-swatch0);
+  --color-bg1: var(--color-swatch2);
+  --color-bg2: var(--color-swatch3);
+
+  --color-border: var(--color-swatch3);
   --color-shadow: var(--color-black);
 
-  --gradient: linear-gradient(
+  --color-gradient: linear-gradient(
     to bottom,
-    /* oklch(43.068% 0.14744 295.752), */ oklch(36.807% 0.09884 295.177),
-    oklch(21.175% 0.06131 296.68)
+    oklch(36.794% 0.11562 296.039),
+    oklch(31.603% 0.0837 295.641),
+    oklch(23.036% 0.0625 298.118)
   );
 
   /* Animation Transitions 
@@ -81,8 +86,8 @@
 }
 
 html {
-  background: var(--gradient);
-  /* background-color: var(--color-swatch3); */
+  background: var(--color-gradient);
+  /* background-color: var(--color-bg2); */
 }
 
 body {
@@ -125,6 +130,15 @@ h2 {
   line-height: 1.2;
   margin-block: 0.3em;
   font-weight: 600;
+}
+
+h3 {
+  background-color: var(--color-highlight);
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: var(--10px);
+  padding: var(--8px);
+  text-align: center;
 }
 
 ul {

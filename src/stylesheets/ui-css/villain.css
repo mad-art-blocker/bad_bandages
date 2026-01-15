@@ -1,5 +1,5 @@
 .villain {
-  background-color: var(--color-swatch2);
+  background-color: var(--color-bg2);
   padding: var(--10px);
   height: fit-content;
 }

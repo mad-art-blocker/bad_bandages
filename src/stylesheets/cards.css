@@ -21,13 +21,6 @@
   } */
 }
 
-.card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: var(--10px);
-  text-align: center;
-}
-
 .card-content {
   color: var(--color-swatch1);
   margin: auto;
