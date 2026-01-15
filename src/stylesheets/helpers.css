@@ -19,7 +19,7 @@
 /***** GLOBAL HELPERS *****/
 
 .test {
-  border: var(--1px) red solid;
+  border: var(--1px) tomato solid;
 }
 
 .txt-light {
@@ -36,7 +36,7 @@
 
 .highlight {
   background-color: var(--color-highlight);
-  padding: var(--2px);
+  padding: var(--2px) var(--4px);
 }
 
 .paddingX {

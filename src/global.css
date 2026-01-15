@@ -76,7 +76,7 @@
 *::before,
 *::after {
   border: none;
-  border-radius: var(--8px);
+  border-radius: var(--6px);
   box-sizing: border-box;
   margin: 0;
   outline: none;
@@ -136,7 +136,7 @@ h3 {
   background-color: var(--color-highlight);
   font-size: 1em;
   font-weight: 700;
-  margin-bottom: var(--10px);
+  margin-bottom: var(--16px);
   padding: var(--8px);
   text-align: center;
 }
@@ -153,6 +153,12 @@ svg {
   /* shape-margin: calc(var(--10px) + var(--2px)); */
   max-width: 100%;
   vertical-align: middle;
+}
+
+summary {
+  background-color: var(--color-highlight);
+  cursor: pointer;
+  padding: var(--8px) var(--20px);
 }
 
 /**=========== MEDIA QUERIES 810px ===========**/

@@ -15,7 +15,8 @@ const titlesKeys = {
 // Website Title Name
 const injectTitle = document.querySelectorAll('.siteTitleJS');
 for (let it = 0; it < injectTitle.length; it++) {
-  injectTitle[it].textContent = `${titlesKeys.webSiteTitle.toUpperCase()}`;
+  injectTitle[it].textContent =
+    `${titlesKeys.webSiteTitle.toUpperCase()}`;
 }
 
 // Sub-title or Token:
