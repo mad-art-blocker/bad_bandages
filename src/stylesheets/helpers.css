@@ -19,7 +19,7 @@
 /***** GLOBAL HELPERS *****/
 
 .test {
-  border: var(--1px) tomato solid;
+  border: var(--color-border-important);
 }
 
 .txt-light {

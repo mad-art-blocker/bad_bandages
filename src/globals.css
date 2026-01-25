@@ -1,9 +1,8 @@
 :root {
-  /* PURPLE SWATCHES FROM LIGHT TO DARK COLORS: */
   /* --color-*: initial; */
-  --color-swatch0: oklch(27.498% 0.07413 297.016 / 0.603);
+  --color-swatch0: oklch(30.167% 0.0998 294.798 / 0.705);
   --color-white: oklch(81.211% 0.03516 316.765);
-  --color-swatch1: oklch(69.213% 0.02396 311.981);
+  --color-swatch1: oklch(67.244% 0.05911 311.438);
   --color-swatch2: oklch(37.003% 0.10958 295.981);
   --color-swatch3: oklch(30.113% 0.08289 296.836);
   --color-black: oklch(24.895% 0.06671 296.636);
@@ -13,13 +12,12 @@
   --color-bandage: oklch(74.298% 0.11127 82.842);
   --color-wild: oklch(65.019% 0.12486 316.263);
   --color-highlight: oklch(63.69% 0.11266 316.188 / 0.171);
-  /* --color-important: oklch(57.321% 0.19998 310.001); */
+  --color-important: oklch(46.653% 0.09273 30.741);
 
-  --color-bg0: var(--color-swatch0);
-  --color-bg1: var(--color-swatch2);
-  --color-bg2: var(--color-swatch3);
+  --color-border-light: var(--1px) var(--color-swatch1) solid;
+  --color-border-dark: var(--1px) var(--color-black) solid;
+  --color-border-important: var(--1px) var(--color-important) solid;
 
-  --color-border: var(--color-swatch3);
   --color-shadow: var(--color-black);
 
   --color-gradient: linear-gradient(
@@ -87,12 +85,12 @@
 
 html {
   background: var(--color-gradient);
-  /* background-color: var(--color-bg2); */
+  /* background-color: var(--color-swatch3); */
 }
 
 body {
   color: var(--color-swatch1);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 100%;
   overflow-x: hidden;
   line-height: 1.6;

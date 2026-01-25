@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./bandages.css" />
     <title>Bandages Page</title>
 
-    <script type="module" src="../src/main.js" defer></script>
+    <script type="module" src="../src/main-bandage.js" defer></script>
     <script
       src="../src/scripts/intersectionObservers.js"
       defer
@@ -143,12 +143,12 @@
             </ul>
           </details>
         </aside>
-        <main class="txt-center small-container">
+        <main class="txt-center small-container test">
           <p>
-            I'm using CSS Grid in the main section, flanked by two
-            sidebars to be filled with "helpful" links to patch up my
-            otherwise unimpressive page. There's also a drawer for
-            quick notes, links, and or other useful resources.
+            I'm using CSS Grid in the main section, flanked by two sidebars to
+            be filled with "helpful" links to patch up my otherwise unimpressive
+            page. There's also a drawer for quick notes, links, and or other
+            useful resources.
           </p>
         </main>
         <aside class="navbar2">
@@ -220,24 +220,23 @@
       <small>
         <span class="siteTitleJS">|</span> &copy;
         <span id="thisYearJS"></span> All rights reserved. |
-        <a href="#top"> Privacy Policy | </a>version release: October
-        31, 2025
+        <a href="#top"> Privacy Policy | </a>version release: October 31, 2025
       </small>
     </footer>
 
     <script>
       function toggleDrawer() {
         const drawer = document.querySelector(
-          '.drawer',
+          ".drawer",
         );
         if (!drawer) return;
         if (
-          drawer.style.bottom === '0px' ||
-          drawer.style.bottom === '0'
+          drawer.style.bottom === "0px" ||
+          drawer.style.bottom === "0"
         ) {
-          drawer.style.bottom = '-100%';
+          drawer.style.bottom = "-100%";
         } else {
-          drawer.style.bottom = '0';
+          drawer.style.bottom = "0";
         }
       }
     </script>

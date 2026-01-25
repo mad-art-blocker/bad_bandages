@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="./about.css" />
     <title>About Page</title>
-    <script type="module" src="../src/main.js" defer></script>
+    <script type="module" src="../src/main-bandage.js" defer></script>
   </head>
 
   <body>
@@ -72,22 +72,20 @@
           <p>I'm using a small-container class.</p>
         </section>
       </header>
-      <p class="txt-center">
-        Remove the test class from the HTML header container. The red
-        border is only for visual feedback, and the class can be used
-        anywhere.
-      </p>
 
-      <main>
-        <p class="txt-center">
-          You can remove the "large, medium, small containers" class
-          in any section block to make it 100% wide.
+      <main class="small-container">
+        <p>
+          Remove the test class from the HTML header container. The red border
+          is only for visual feedback, and the class can be used anywhere. You
+          can remove the "large, medium, small containers" class in any section
+          block to make it 100% wide. The "villian" container is set to be a
+          "second footer", every hero has its villain.
         </p>
       </main>
     </div>
 
     <!-- VILLAIN CONTAINER is not part of the page-container -->
-    <div class="villain small-container">
+    <div class="villain">
       <h4 class="txt-center">The Villain Container</h4>
     </div>
 
@@ -96,8 +94,7 @@
       <small>
         <span class="siteTitleJS">|</span> &copy;
         <span id="thisYearJS"></span> All rights reserved. |
-        <a href="#top"> Privacy Policy | </a> version release: October
-        31, 2025
+        <a href="#top"> Privacy Policy | </a> version release: October 31, 2025
       </small>
     </footer>
 

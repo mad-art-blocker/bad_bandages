@@ -39,3 +39,4 @@ mise.toml
 .env
 .env.local
 *.directory
+desktop.ini

@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.observeThisJS'); // use a class for multiple
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".observeThisJS"); // use a class for multiple
 
   if (!sections.length) return; // safety check
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('showMe');
+        entry.target.classList.add("showMe");
       } else {
-        entry.target.classList.remove('showMe');
+        entry.target.classList.remove("showMe");
       }
     });
   }, {
