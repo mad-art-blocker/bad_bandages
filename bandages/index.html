@@ -25,11 +25,17 @@
     <link rel="stylesheet" href="./bandages.css" />
     <title>Bandages Page</title>
 
-    <script type="module" src="../src/main-bandage.js" defer></script>
+    <script
+      type="module"
+      src="../src/main-bandage.js"
+      defer
+      nonce="your-nonce-value"
+    ></script>
     <script
       src="../src/scripts/intersectionObservers.js"
       defer
       type="module"
+      nonce="your-nonce-value"
     ></script>
   </head>
 
@@ -117,7 +123,7 @@
       <div class="sidebars-grid">
         <aside class="navbar1">
           <details open>
-            <summary><strong>Sidebar 1</strong></summary>
+            <summary><h5>Sidebar 2</h5></summary>
             <ul>
               <li>
                 <a
@@ -153,7 +159,7 @@
         </main>
         <aside class="navbar2">
           <details open>
-            <summary><strong>Sidebar 2</strong></summary>
+            <summary><h5>Sidebar 2</h5></summary>
             <ul>
               <li>
                 <a
@@ -181,27 +187,24 @@
         </aside>
       </div>
 
-      <!-- DIV DRAWER -->
-      <div class="div-drawer">
-        <button
-          class="drawer-toggle"
-          onclick="toggleDrawer()"
-          type="button"
-        >
-          ☰
-        </button>
-      </div>
+      <!-- DIV DRAWER BUTTON -->
+
+      <button
+        class="drawer-toggle"
+        type="button"
+      >
+        ☰
+      </button>
 
       <!-- Drawer (initially hidden) -->
       <div class="drawer">
         <div class="drawer-content">
-          <h2>Drawer Content</h2>
+          <h4>Drawer Content</h4>
           <p>
             This is a sliding drawer from the bottom of the Footer!
           </p>
           <button
-            class="drawer-button"
-            onclick="toggleDrawer()"
+            class="drawer-close"
             type="button"
           >
             Close Drawer
@@ -212,35 +215,18 @@
 
     <!-- VILLAIN CONTAINER is not part of the page-container or grid layout -->
     <div class="villain">
-      <h4 class="txt-center">The Villain Container</h4>
+      <h2 class="txt-center">The Villain Container</h2>
     </div>
 
     <!-- FOOTER is not part of the page-container or grid layout -->
     <footer class="main-footer">
       <small>
         <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved. |
-        <a href="#top"> Privacy Policy | </a>version release: October 31, 2025
+        <span id="thisYearJS"></span> All rights reserved.
+        <a href="#top"> Privacy Policy </a>version release: October 31, 2025
       </small>
     </footer>
 
-    <script>
-      function toggleDrawer() {
-        const drawer = document.querySelector(
-          ".drawer",
-        );
-        if (!drawer) return;
-        if (
-          drawer.style.bottom === "0px" ||
-          drawer.style.bottom === "0"
-        ) {
-          drawer.style.bottom = "-100%";
-        } else {
-          drawer.style.bottom = "0";
-        }
-      }
-    </script>
-
-    <!-- <script type="module" src="./bandages.js"></script> -->
+    <script type="module" src="./bandages.js" nonce="your-nonce-value"></script>
   </body>
 </html>

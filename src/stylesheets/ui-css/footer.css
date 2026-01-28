@@ -1,7 +1,11 @@
 .main-footer {
-  /* background-color: var(--color-black); */
+  background-color: var(--color-black);
   text-align: center;
   padding: var(--25px) 0;
+
+  small {
+    color: var(--color-white);
+  }
 
   a {
     &:hover {

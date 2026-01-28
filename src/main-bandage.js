@@ -1,6 +1,7 @@
 import "./stylesheets/ui-css/navbar.css";
 import "./stylesheets/ui-css/footer.css";
 import "./stylesheets/ui-css/villain.css";
+import "./stylesheets/buttons.css";
 import "./stylesheets/helpers.css";
 
 // Always keep global.css at the end to ensure it overrides other styles, especially for media queries.

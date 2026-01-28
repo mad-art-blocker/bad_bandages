@@ -24,7 +24,12 @@
     />
     <link rel="stylesheet" href="./about.css" />
     <title>About Page</title>
-    <script type="module" src="../src/main-bandage.js" defer></script>
+    <script
+      type="module"
+      src="../src/main-bandage.js"
+      defer
+      nonce="random-nonce-value"
+    ></script>
   </head>
 
   <body>
@@ -66,7 +71,7 @@
 
       <!-- HERO -->
       <header class="bg-banner small-container test">
-        <section class="intro-box">
+        <section class="intro-box slide-left-anim">
           <h2>ABOUT PAGE</h2>
           <p>Welcome to the About page!</p>
           <p>I'm using a small-container class.</p>
@@ -86,15 +91,15 @@
 
     <!-- VILLAIN CONTAINER is not part of the page-container -->
     <div class="villain">
-      <h4 class="txt-center">The Villain Container</h4>
+      <h2 class="txt-center">The Villain Container</h2>
     </div>
 
     <!-- FOOTER is not part of the page-container -->
     <footer class="main-footer">
       <small>
         <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved. |
-        <a href="#top"> Privacy Policy | </a> version release: October 31, 2025
+        <span id="thisYearJS"></span> All rights reserved.
+        <a href="#top"> Privacy Policy </a>version release: October 31, 2025
       </small>
     </footer>
 

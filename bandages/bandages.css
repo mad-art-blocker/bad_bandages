@@ -38,17 +38,9 @@
   rotate: none;
 }
 
-/** Drawer CSS Toggle **/
-
-.div-drawer {
-  padding: var(--16px);
-  color: var(--color-wild);
-  text-align: center;
-}
+/** Drawer CSS Toggle Button **/
 
 .drawer-toggle {
-  background-color: var(--color-black);
-  color: var(--color-swatch1);
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
@@ -60,10 +52,11 @@
 
 .drawer {
   position: fixed;
+  color: var(--color-white);
   bottom: -100%;
   left: 0;
   right: 0;
-  transition: bottom 0.3s ease;
+  transition: bottom 0.4s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,21 +64,11 @@
 
 .drawer-content {
   background-color: var(--color-black);
-  width: 100%;
+  width: 80%;
   height: 50dvh;
   padding: var(--16px);
-  opacity: 0.90;
+  opacity: 0.95;
   text-align: center;
-}
-
-.drawer-button {
-  background-color: var(--color-bandage);
-  padding: var(--10px) var(--20px);
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--color-accent);
-  }
 }
 
 /*? BANDAGES MEDIA QUERIES ?*/

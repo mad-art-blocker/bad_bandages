@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-image: url(./assets/bb-mascot-480x270.svg);
   /* background-position: center; */
-  background-position: top var(--32px) right var(--4px);
+  background-position: top 0 right var(--4px);
   background-size: cover;
   /* object-fit: scale-down; */
   height: 72vh;
@@ -25,7 +25,6 @@
 /*? HOME MEDIA QUERIES ?*/
 
 /* Largest to smallest */
-
 /**=========== MEDIA QUERIES 825px ===========**/
 /* 51.563rem */
 

@@ -1,0 +1,22 @@
+/* - Learn Transitions and Animations:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using */
+.slide-left-anim {
+  /* background-color: var(--color-swatch0); */
+  /* box-shadow: 0px 4px 4px var(--color-shadow); */
+  /* height: auto; */
+  /* padding: var(--16px); */
+  animation-duration: 1.5s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}

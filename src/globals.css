@@ -1,17 +1,19 @@
 :root {
   /* --color-*: initial; */
-  --color-swatch0: oklch(30.167% 0.0998 294.798 / 0.705);
-  --color-white: oklch(81.211% 0.03516 316.765);
-  --color-swatch1: oklch(67.244% 0.05911 311.438);
-  --color-swatch2: oklch(37.003% 0.10958 295.981);
-  --color-swatch3: oklch(30.113% 0.08289 296.836);
-  --color-black: oklch(24.895% 0.06671 296.636);
+  --color-swatch0: oklch(32.108% 0.10824 295.497 / 0.774);
+  --color-white: oklch(77.637% 0.05476 304.714);
+  --color-swatch1: oklch(70.644% 0.05739 304.074);
+  --color-swatch2: oklch(42.781% 0.10018 298.733);
+  --color-swatch3: oklch(34.08% 0.10015 296.331);
+  --color-black: oklch(25.492% 0.0683 297.56);
 
   /* OTHER SWATCHES: */
-  --color-accent: oklch(61.468% 0.11785 37.422);
-  --color-bandage: oklch(74.298% 0.11127 82.842);
-  --color-wild: oklch(65.019% 0.12486 316.263);
-  --color-highlight: oklch(63.69% 0.11266 316.188 / 0.171);
+  --color-bg: var(--color-swatch3);
+
+  --color-accent: oklch(62.146% 0.09745 37.731);
+  --color-bandage: oklch(67.317% 0.08344 63.141);
+  --color-wild: oklch(48.735% 0.07729 314.642);
+  --color-highlight: oklch(63.69% 0.11266 316.188 / 0.247);
   --color-important: oklch(46.653% 0.09273 30.741);
 
   --color-border-light: var(--1px) var(--color-swatch1) solid;
@@ -22,9 +24,9 @@
 
   --color-gradient: linear-gradient(
     to bottom,
-    oklch(36.794% 0.11562 296.039),
-    oklch(31.603% 0.0837 295.641),
-    oklch(23.036% 0.0625 298.118)
+    oklch(36.402% 0.11702 294.851),
+    oklch(33.045% 0.10196 295.677),
+    oklch(27.02% 0.09188 296.588)
   );
 
   /* Animation Transitions 
@@ -85,11 +87,11 @@
 
 html {
   background: var(--color-gradient);
-  /* background-color: var(--color-swatch3); */
+  /* background-color: var(--color-bg); */
 }
 
 body {
-  color: var(--color-swatch1);
+  color: var(--color-white);
   font-family: "Inter", sans-serif;
   font-size: 100%;
   overflow-x: hidden;
@@ -107,7 +109,7 @@ body {
 }
 
 a {
-  color: var(--color-swatch1);
+  color: var(--color-bandage);
   font-weight: 600;
 }
 
@@ -117,13 +119,13 @@ h1 {
   margin-block: 0.2em;
 
   a {
-    color: var(--color-bandage);
+    color: var(--color-accent);
     font-weight: bold;
   }
 }
 
 h2 {
-  color: var(--color-white);
+  color: var(--color-bandage);
   font-size: clamp(1em, 1.5vw, 1.5em);
   line-height: 1.2;
   margin-block: 0.3em;
@@ -131,12 +133,28 @@ h2 {
 }
 
 h3 {
-  background-color: var(--color-highlight);
+  background-color: var(--color-wild);
+  color: var(--color-white);
   font-size: 1em;
   font-weight: 700;
   margin-bottom: var(--16px);
   padding: var(--8px);
   text-align: center;
+}
+
+h4 {
+  color: var(--color-wild);
+  font-size: clamp(1em, 1.5vw, 1.5em);
+  line-height: 1.2;
+  margin-block: 0.3em;
+  font-weight: 600;
+}
+
+h5 {
+  display: inline;
+  color: var(--color-swatch1);
+  font-size: clamp(1em, 0.5vw, 1.5em);
+  font-weight: 600;
 }
 
 ul {
