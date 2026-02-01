@@ -1,22 +1,24 @@
-@import url("../src/stylesheets/cards.css");
-@import url("../src/stylesheets/ui-css/sidebars-grid.css");
+/* CSS is imported via the page's javascript file. */
+
+/* @import url("../src/stylesheets/cards.css"); */
+/* @import url("../src/stylesheets/ui-css/sidebars-grid.css"); */
 
 /* h1 in index.css */
 
 .bg-banner {
-  /* shape-margin: calc(var(--10px) + var(--2px)); */
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-image: url(../src/assets/bb-mascot-480x270.svg);
-  background-position: top;
-  /* background-position: top var(--80px) right var(--25px); */
-  background-size: cover;
-  /* object-fit: scale-down; */
-  height: 100vh;
+  height: 100dvh;
+  background:
+    url(../src/assets/bb-mascot-480x270.svg) center/cover no-repeat,
+    linear-gradient(
+    40deg,
+    #3e2a65 0%,
+    oklch(38.731% 0.1147 294.987) 50%,
+    #3e2a65 20%
+  );
 }
 
 .intro-box {
-  transform: translateX(500px) rotate(30deg) translateY(350px);
+  transform: translateX(600px) rotate(45deg) translateY(350px);
   max-width: fit-content;
   width: var(--300px);
   /* padding: var(--10px); */

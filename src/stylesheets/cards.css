@@ -22,7 +22,7 @@
 }
 
 .card-content {
-  color: var(--color-swatch1);
+  /* color: var(--color-black); */
   margin: auto;
 
   img {

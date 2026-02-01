@@ -22,19 +22,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="./bandages.css" />
+    <!-- Other CSS and JS is imported via the page's JS file. -->
+    <!-- <link rel="stylesheet" href="./bandages.css" /> -->
     <title>Bandages Page</title>
 
     <script
       type="module"
-      src="../src/main-bandage.js"
+      src="./bandages.js"
       defer
-      nonce="your-nonce-value"
-    ></script>
-    <script
-      src="../src/scripts/intersectionObservers.js"
-      defer
-      type="module"
       nonce="your-nonce-value"
     ></script>
   </head>
@@ -98,10 +93,12 @@
             <source
               srcset="../src/assets/bandage-190x80.svg"
               media="(min-width: 400px)"
+              loading="lazy"
             />
             <source
               srcset="../src/assets/bandage-190x80.webp"
               media="(max-width: 400px)"
+              loading="lazy"
             />
             <img
               src="../src/assets/bandage-190x80.svg"
@@ -227,6 +224,7 @@
       </small>
     </footer>
 
-    <script type="module" src="./bandages.js" nonce="your-nonce-value"></script>
+    <!-- JS imported from the page's JS file. -->
+    <!-- <script type="module" src="./bandages.js" nonce="your-nonce-value"></script> -->
   </body>
 </html>

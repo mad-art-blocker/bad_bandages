@@ -22,17 +22,16 @@
 
   --color-shadow: var(--color-black);
 
-  --color-gradient: linear-gradient(
+  /* --color-gradient: linear-gradient(
     to bottom,
     oklch(36.402% 0.11702 294.851),
     oklch(33.045% 0.10196 295.677),
     oklch(27.02% 0.09188 296.588)
-  );
+  ); */
 
   /* Animation Transitions 
-  Usage: transition: var(--main-transition);
-  */
-  --main-transition: all 0.4s linear;
+  Usage: transition: var(--main-transition); */
+  /* --main-transition: all 0.4s linear; */
 
   /* REM SIZES */
 
@@ -84,10 +83,10 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
+/* Gradient variable is commented up ^ in the color variables */
 html {
-  background: var(--color-gradient);
-  /* background-color: var(--color-bg); */
+  /* background: var(--color-gradient); */
+  background-color: var(--color-bg);
 }
 
 body {

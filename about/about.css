@@ -1,14 +1,18 @@
-@import url("../src/stylesheets/animations.css");
+/* CSS is imported via the page's javascript file. */
+/* @import url("../src/stylesheets/animations.css"); */
 
 /* h1 in index.css */
 
 .bg-banner {
-  /* background-color: pink; */
-  background-repeat: no-repeat;
-  background-image: url(../src/assets/bb-mascot-480x270.svg);
-  background-position: center;
-  background-size: contain;
-  height: 70vh;
+  height: 70dvh;
+  background:
+    url(../src/assets/bb-mascot-480x270.svg) center/contain no-repeat,
+    linear-gradient(
+    40deg,
+    #3e2a65 0%,
+    oklch(38.731% 0.1147 294.987) 50%,
+    #3e2a65 20%
+  );
 }
 
 .intro-box {

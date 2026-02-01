@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".observeThisJS"); // use a class for multiple
+  // Use a class for multiple observed sections:
+  const observedSections = document.querySelectorAll(".observeThisJS");
 
-  if (!sections.length) return; // safety check
+  // Safety check:
+  if (!observedSections.length) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -12,8 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.5, // 0.5 triggers when 50% of element is visible. Try 1.0 or tweak it.
+    // 0.5 triggers when 50% of element is visible. Try 1.0 or tweak it:
+    threshold: 0.5,
   });
 
-  sections.forEach((section) => observer.observe(section));
+  observedSections.forEach((section) => observer.observe(section));
 });

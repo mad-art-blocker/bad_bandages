@@ -3,7 +3,7 @@
 /* h1 in index.css */
 
 .intro-box {
-  transform: translateX(5rem) translateY(200px);
+  transform: translateX(4rem) translateY(150px);
   /* max-width: fit-content; */
   width: var(--300px);
   /* padding: var(--10px); */
@@ -12,14 +12,15 @@
 }
 
 .bg-banner {
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-image: url(./assets/bb-mascot-480x270.svg);
-  /* background-position: center; */
-  background-position: top 0 right var(--4px);
-  background-size: cover;
-  /* object-fit: scale-down; */
-  height: 72vh;
+  height: 72dvh;
+  background:
+    url(./assets/bb-mascot-480x270.svg) center/contain no-repeat,
+    linear-gradient(
+    40deg,
+    #3e2a65 0%,
+    oklch(38.731% 0.1147 294.987) 50%,
+    #3e2a65 20%
+  );
 }
 
 /*? HOME MEDIA QUERIES ?*/

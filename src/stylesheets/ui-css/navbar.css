@@ -3,7 +3,7 @@
   align-items: center;
   background-color: var(--color-swatch0);
   /* box-shadow: 0px 4px 4px var(--color-shadow); */
-  justify-content: center;
+  /* justify-content: center; */
   height: var(--80px);
   width: 100%;
   position: sticky;

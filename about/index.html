@@ -22,11 +22,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="./about.css" />
+    <!-- Other CSS and JS is imported via the page's JS file. -->
+    <!-- <link rel="stylesheet" href="./about.css" /> -->
     <title>About Page</title>
     <script
       type="module"
-      src="../src/main-bandage.js"
+      src="./about.js"
       defer
       nonce="random-nonce-value"
     ></script>
@@ -79,12 +80,14 @@
       </header>
 
       <main class="small-container">
-        <p>
-          Remove the test class from the HTML header container. The red border
-          is only for visual feedback, and the class can be used anywhere. You
-          can remove the "large, medium, small containers" class in any section
-          block to make it 100% wide. The "villian" container is set to be a
-          "second footer", every hero has its villain.
+        <p class="slide-up-anim">
+          This page has simple CSS animations added to the intro box and main
+          paragraph using the animations.css. Remove the test class from the
+          HTML header container. The red border (inside the helpers.css file) is
+          only for visual feedback. You can remove the "large, medium, small
+          containers" class in any section block to make it 100% wide. The
+          "villian" container is set to be a "second footer", every hero has its
+          villain.
         </p>
       </main>
     </div>
@@ -103,6 +106,7 @@
       </small>
     </footer>
 
-    <!-- <script type="module" src="./about.js"></script> -->
+    <!-- JS imported from the page's JS file. -->
+    <!-- <script type="module" src="./about.js" nonce=""></script> -->
   </body>
 </html>
