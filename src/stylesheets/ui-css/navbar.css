@@ -3,7 +3,7 @@
   align-items: center;
   background-color: var(--color-swatch0);
   /* box-shadow: 0px 4px 4px var(--color-shadow); */
-  /* justify-content: center; */
+  justify-content: center;
   height: var(--80px);
   width: 100%;
   position: sticky;
@@ -77,18 +77,13 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* .logo {
-  cursor: pointer;
-  height: 4rem;
+.logo {
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 10px #cf9a8d);
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-} */
 
 [aria-current] {
   background-color: var(--color-black);
@@ -108,15 +103,14 @@
       font-size: calc(var(--10px) + var(--4px));
     }
   }
+  .logo {
+    display: none;
+  }
 }
 
 /**=========== MEDIA QUERIES 768px ===========**/
 
 @media (max-width: 48rem) {
-  .navbar-main {
-    backdrop-filter: none;
-  }
-
   .navbar-menuJS {
     flex-direction: column;
     align-items: flex-start;

@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: var(--25px);
   height: auto;
+  margin: 0 auto;
 }
 
 .card {
@@ -23,7 +24,6 @@
 
 .card-content {
   /* color: var(--color-black); */
-  margin: auto;
 
   img {
     margin-bottom: var(--16px);

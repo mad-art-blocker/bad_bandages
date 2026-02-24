@@ -161,13 +161,17 @@ ul {
 }
 
 img,
-picture,
-svg {
-  /* aspect-ratio: 9 / 16; */
-  /* display: block; */
+picture {
+  aspect-ratio: 9 / 16;
   /* shape-margin: calc(var(--10px) + var(--2px)); */
   max-width: 100%;
   vertical-align: middle;
+}
+
+svg {
+  /* aspect-ratio: 9 / 16; */
+  display: block;
+  max-width: 100%;
 }
 
 summary {

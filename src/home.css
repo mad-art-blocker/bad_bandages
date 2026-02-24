@@ -3,12 +3,11 @@
 /* h1 in index.css */
 
 .intro-box {
-  transform: translateX(4rem) translateY(150px);
-  /* max-width: fit-content; */
-  width: var(--300px);
+  transform: translateX(10dvw) translateY(100px);
+  max-width: fit-content;
+  /* width: clamp(400px, 300px, 200px); */
   /* padding: var(--10px); */
   text-align: center;
-  /* height: 1000px; */
 }
 
 .bg-banner {
@@ -21,6 +20,7 @@
     oklch(38.731% 0.1147 294.987) 50%,
     #3e2a65 20%
   );
+  margin: auto;
 }
 
 /*? HOME MEDIA QUERIES ?*/
@@ -28,14 +28,6 @@
 /* Largest to smallest */
 /**=========== MEDIA QUERIES 825px ===========**/
 /* 51.563rem */
-
-/*? Hero Section ?*/
-@media (max-width: 51.563rem) {
-  .intro-box {
-    margin: var(--64px) auto;
-    transform: none;
-  }
-}
 
 /**=========== MEDIA QUERIES 810px ===========**/
 
@@ -46,11 +38,19 @@
 
 /*? Hero Section ?*/
 @media (max-width: 48rem) {
+  .intro-box {
+    margin: auto;
+    transform: none;
+  }
+}
+
+/*? Hero Section ?*/
+@media (max-width: 48rem) {
   .bg-banner {
     background-image: url(./assets/bb-mascot-144x190.svg);
     background-position: bottom;
-    background-size: 60%;
-    height: 69dvh;
+    background-size: 50%;
+    /* height: auto; */
   }
 }
 
@@ -60,6 +60,6 @@
 /*? Hero Section ?*/
 @media (max-width: 30rem) {
   .bg-banner {
-    height: 55dvh;
+    max-height: 50dvh;
   }
 }
