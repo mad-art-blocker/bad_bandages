@@ -59,9 +59,9 @@
 }
 
 .marginX {
-  padding: 0 var(--48px);
+  margin: 0 var(--48px);
 }
 
 .marginY {
-  padding: var(--48px) 0;
+  margin: var(--48px) 0;
 }
