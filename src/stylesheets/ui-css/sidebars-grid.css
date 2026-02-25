@@ -15,7 +15,7 @@
   /* height: auto; */
 
   ul {
-    background-color: var(--color-swatch3);
+    background-color: var(--color-swatch0);
     padding: var(--4px);
     text-align: center;
 
@@ -23,6 +23,12 @@
       color: var(--color-accent);
     }
   }
+}
+
+summary {
+  background-color: var(--color-highlight);
+  cursor: pointer;
+  padding: var(--4px) var(--8px);
 }
 
 main {

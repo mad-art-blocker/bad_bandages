@@ -23,11 +23,7 @@
 }
 
 .card-content {
-  /* color: var(--color-black); */
-
-  img {
-    margin-bottom: var(--16px);
-  }
+  padding: var(--4px);
 }
 
 /* Smallest to the largest */
