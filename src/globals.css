@@ -66,9 +66,10 @@
   --810px: 50.625rem;
   --1280px: 80rem;
   --1440px: 90rem;
+  --1600px: 100rem;
 
   /* Calc Usage: */
-  /* calc(var(--4px) + var(--2px)); */
+  /* calc(var(--100px) + var(--25px)); */
 }
 
 *,
@@ -109,7 +110,7 @@ a {
 }
 
 h1 {
-  font-size: clamp(1em, 2vw, 1.5em);
+  font-size: clamp(1em, 2.5vw, 1.8em);
   line-height: 1.1;
   margin-block: 0.2em;
 
@@ -121,19 +122,20 @@ h1 {
 
 h2 {
   color: var(--color-bandage);
-  font-size: clamp(1em, 1.5vw, 1em);
+  font-size: clamp(1em, 2.5vw, 1.4em);
   line-height: 1.2;
   margin-block: 0.3em;
   font-weight: 600;
 }
 
 h3 {
-  color: var(--color-white);
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: var(--16px);
-  padding: var(--8px);
-  text-align: center;
+  /* background-color: var(--color-highlight); */
+  color: var(--color-bandage);
+  font-family: "Roboto", "Inter", sans-serif;
+  font-size: clamp(1em, 2.5vw, 1.4em);
+  font-weight: 500;
+  letter-spacing: var(--4px);
+  text-decoration: underline;
 }
 
 ul {

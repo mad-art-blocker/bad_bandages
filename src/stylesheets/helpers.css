@@ -7,16 +7,6 @@
   border: var(--color-border-important);
 }
 
-.txt-decorated {
-  /* background-color: var(--color-highlight); */
-  color: var(--color-bandage);
-  font-family: "Roboto", "Inter", sans-serif;
-  font-size: clamp(1em, 0.5vw, 1.5em);
-  font-weight: 500;
-  letter-spacing: var(--4px);
-  text-decoration: underline;
-}
-
 .txt-light {
   color: var(--color-white);
 }

@@ -5,6 +5,7 @@ the HTML pages if you want to remove this class. */
 }
 
 /***** Generic Containers *****/
+
 .large-container {
   max-width: var(--1440px);
 }

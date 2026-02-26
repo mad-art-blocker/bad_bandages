@@ -29,15 +29,25 @@
 /**=========== MEDIA QUERIES 825px ===========**/
 /* 51.563rem */
 
-/**=========== MEDIA QUERIES 810px ===========**/
+/* @media (max-width: 51.563rem) {} */
 
+/**=========== MEDIA QUERIES 810px ===========**/
 /* 50.625rem */
+
+/* @media (max-width: 50.625rem) {} */
 
 /**=========== MEDIA QUERIES 768px ===========**/
 /* 48rem */
 
+/* Less than or equal to 48rem */
+/* If you want to use this syntax instead:
+ 
+ @media (max-width: 48rem) {}
+ 
+ */
+
 /*? Hero Section ?*/
-@media (max-width: 48rem) {
+@media (width <= 48rem) {
   .intro-box {
     margin: auto;
     transform: none;
@@ -45,7 +55,7 @@
 }
 
 /*? Hero Section ?*/
-@media (max-width: 48rem) {
+@media (width <= 48rem) {
   .bg-banner {
     background-image: url(./assets/bb-mascot-144x190.svg);
     background-position: bottom;
@@ -58,7 +68,7 @@
 /* 30rem */
 
 /*? Hero Section ?*/
-@media (max-width: 30rem) {
+@media (width <= 30rem) {
   .bg-banner {
     max-height: 50dvh;
   }
