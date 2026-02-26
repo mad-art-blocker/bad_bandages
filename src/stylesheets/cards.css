@@ -4,7 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: var(--25px);
   height: auto;
-  margin: 0 auto;
+  margin: var(--48px) auto;
 }
 
 .card {
@@ -25,6 +25,12 @@
 .card-content {
   padding: var(--4px);
 }
+
+/* .card-footer {
+  background-color: var(--color-white);
+  width: 100%;
+  margin: 0 auto;
+} */
 
 /* Smallest to the largest */
 

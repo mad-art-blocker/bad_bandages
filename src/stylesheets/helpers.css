@@ -1,17 +1,5 @@
 /***** GLOBAL MAIN UTILITIES *****/
 /* ///////////////////////////// */
-/***** Containers *****/
-.large-container {
-  max-width: var(--1440px);
-}
-
-.medium-container {
-  max-width: var(--1280px);
-}
-
-.small-container {
-  max-width: var(--810px);
-}
 
 /***** GLOBAL HELPERS *****/
 
@@ -23,9 +11,9 @@
   /* background-color: var(--color-highlight); */
   color: var(--color-bandage);
   font-family: "Roboto", "Inter", sans-serif;
-  font-size: clamp(1.5em, 0.5vw, 1em);
+  font-size: clamp(1em, 0.5vw, 1.5em);
   font-weight: 500;
-  /* text-align: center; */
+  letter-spacing: var(--4px);
   text-decoration: underline;
 }
 

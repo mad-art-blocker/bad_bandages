@@ -1,0 +1,27 @@
+/* Main wrapping container in HTLML. Remove it in 
+the HTML pages if you want to remove this class. */
+.page-container {
+  min-height: 100dvh;
+}
+
+/***** Generic Containers *****/
+.large-container {
+  max-width: var(--1440px);
+}
+
+.medium-container {
+  max-width: var(--1280px);
+}
+
+.small-container {
+  max-width: var(--810px);
+}
+
+/* This can be a footer or anything, it reflects the hero section: */
+
+.villain {
+  background-color: var(--color-swatch0);
+  padding: var(--10px);
+  /* height: fit-content; */
+  height: 30dvh;
+}

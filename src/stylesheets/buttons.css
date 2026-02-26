@@ -1,16 +1,28 @@
 button {
-  background-color: var(--color-swatch3);
-  color: var(--color-white);
+  border: var(--color-border-light);
+  background-color: transparent;
+  color: var(--color-bandage);
   display: block;
   font-weight: bold;
-  font-size: 1em;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: var(--16px) var(--16px);
   transition: 0.1s;
 }
 
+/* .button-light {
+  background-color: var(--color-swatch2);
+  padding: var(--16px) var(--10px);
+} */
+
+.button-bandage {
+  border-radius: var(--25px);
+}
+
+/* All buttons share the same hover and active effects. */
+
 button:hover {
-  /* transform: scale(1.08); */
+  transform: scale(1.06);
   cursor: pointer;
 }
 
