@@ -1,24 +1,35 @@
-/* Main wrapping container in HTLML. Remove it in 
-the HTML pages if you want to remove this class. */
+/* The page-container class wraps all containers except 
+the Villain and the Footer in the HTML. You can set a 
+global width and avoid using container utility classes
+(though you can still use them if they fit your needs or 
+are adjusted). Remove the div and its class from the HTML 
+pages if you don’t need it. */
+
 .page-container {
   min-height: 100dvh;
 }
 
 /***** Generic Containers *****/
 
+/* Large Container class not used but try it out! */
 .large-container {
   max-width: var(--1440px);
 }
 
+/* Medium Container classes used in the Home page. */
 .medium-container {
   max-width: var(--1280px);
 }
 
+/* Small Container classes used in the About page. */
 .small-container {
   max-width: var(--810px);
 }
 
-/* This can be a footer or anything, it reflects the hero section: */
+/* No Container classes used in the Bandages page. */
+
+/* The Villain container can be as another footer or anything, 
+it reflects the hero section: */
 
 .villain {
   background-color: var(--color-swatch0);
