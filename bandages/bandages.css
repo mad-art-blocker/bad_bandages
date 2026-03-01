@@ -18,7 +18,7 @@
 }
 
 .intro-box {
-  transform: translateX(600px) rotate(45deg) translateY(350px);
+  transform: translateX(var(--700px)) rotate(40deg) translateY(350px);
   max-width: fit-content;
   width: var(--300px);
   /* padding: var(--10px); */

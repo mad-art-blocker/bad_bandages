@@ -8,8 +8,9 @@
   }
 
   a {
+    font-size: small;
     &:hover {
-      text-decoration: underline var(--color-accent);
+      text-decoration: underline;
     }
   }
 }

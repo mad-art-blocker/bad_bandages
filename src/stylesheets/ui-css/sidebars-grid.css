@@ -18,10 +18,6 @@
     background-color: var(--color-swatch0);
     padding: var(--4px);
     text-align: center;
-
-    a:hover {
-      color: var(--color-accent);
-    }
   }
 }
 

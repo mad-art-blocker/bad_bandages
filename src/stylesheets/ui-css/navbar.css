@@ -4,7 +4,9 @@
   background-color: var(--color-swatch0);
   /* box-shadow: 0px 4px 4px var(--color-shadow); */
   justify-content: center;
-  height: clamp(var(--100px), 10vh, var(--80px));
+  /* height: clamp(var(--150px), 10vh, var(--100px)); */
+  /* Keep it fit content, the other pages will adapt to its height automagically */
+  height: fit-content;
   width: 100%;
   position: sticky;
   top: 0;
@@ -12,6 +14,7 @@
   left: 0;
   /* background: transparent; */
   /* backdrop-filter: blur(10px); */
+  padding: var(--8px);
   z-index: 50;
 }
 
@@ -26,22 +29,6 @@
   display: flex;
   text-align: center;
   gap: var(--48px);
-
-  a {
-    font-size: calc(var(--10px) + var(--4px));
-    /* Long words or paragraphs wont wrap: */
-    white-space: nowrap;
-    font-size: clamp(
-      0.875rem,
-      0.6346153846153846rem + 1.0256410256410255vw,
-      1.15rem
-    );
-    transition: color 150ms ease;
-
-    &:hover {
-      color: var(--color-accent);
-    }
-  }
 }
 
 .navbar-menuJS.active {
@@ -86,8 +73,8 @@
 }
 
 [aria-current] {
-  background-color: var(--color-black);
-  padding: var(--16px) var(--10px);
+  background-color: var(--color-highlight);
+  padding: var(--10px) var(--8px);
   /* text-decoration: underline; */
 }
 
