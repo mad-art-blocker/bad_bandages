@@ -1,6 +1,6 @@
 @import url("./stylesheets/cards.css");
 
-/* h1 in index.css */
+/* h1 in globals.css */
 
 .intro-box {
   transform: translateX(10dvw) translateY(var(--100px));

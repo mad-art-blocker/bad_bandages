@@ -5,12 +5,12 @@
 
   small {
     color: var(--color-white);
-  }
+    a {
+      font-size: small;
+    }
 
-  a {
-    font-size: small;
-    &:hover {
-      text-decoration: underline;
+    a::before, a::after {
+      content: " \260D ";
     }
   }
 }
