@@ -11,6 +11,7 @@
   background-color: var(--color-swatch2);
   /* box-shadow: 0px 4px 4px var(--color-shadow); */
   display: flex;
+
   flex-direction: column;
   padding: var(--10px);
   /* overflow: hidden; */
@@ -38,13 +39,13 @@
 /* 30rem */
 
 /**=========== MEDIA QUERIES 768px ===========**/
-/*? CARD GRID ?*/
+/* CARD GRID */
 
 @media (max-width: 48rem) {
   .card-grid {
     grid-template-columns: 1fr;
-    width: fit-content;
-    /*? END OF CARD GRID ?*/
+    margin: 0 auto;
+    /* END OF CARD GRID */
   }
 }
 

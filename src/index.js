@@ -2,6 +2,7 @@ import "./stylesheets/ui-css/navbar.css";
 import "./stylesheets/ui-css/footer.css";
 import "./stylesheets/ui-css/containers.css";
 import "./stylesheets/buttons.css";
+import "./stylesheets/animations.css";
 import "./stylesheets/helpers.css";
 
 // Always keep global.css at the end, especially for media queries.

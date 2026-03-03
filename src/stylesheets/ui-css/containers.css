@@ -6,7 +6,8 @@ are adjusted). Remove the div and its class from the HTML
 pages if you don’t need it. */
 
 .page-container {
-  min-height: 100dvh;
+  /* Check the media queries if trouble-shooting */
+  height: auto;
 }
 
 /***** Generic Containers *****/
@@ -36,4 +37,14 @@ it reflects the hero section: */
   padding: var(--10px);
   /* height: fit-content; */
   height: 30dvh;
+}
+
+/**=========== MEDIA QUERIES 480px ===========**/
+/*? PAGE CONTAINER ?*/
+
+@media (max-width: 30rem) {
+  .page-container, .villain, .main-footer {
+    width: 95%;
+    margin: 0 auto;
+  }
 }

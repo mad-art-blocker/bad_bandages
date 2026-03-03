@@ -75,7 +75,6 @@
 *,
 *::before,
 *::after {
-  border: none;
   border-radius: var(--6px);
   box-sizing: border-box;
   margin: 0;
@@ -84,7 +83,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-/* Gradient variable is commented up ^ in the color variables */
+/* Gradient variable is commented, up ^ in the color variables */
 html {
   /* background: var(--color-gradient); */
   background-color: var(--color-bg);
@@ -164,13 +163,4 @@ picture {
 svg {
   vertical-align: middle;
   min-width: 100%;
-}
-
-/**=========== MEDIA QUERIES 810px ===========**/
-/*? Page Container ?*/
-
-@media (max-width: 50.625rem) {
-  .page-container {
-    border: var(--10px) solid var(--color-border);
-  }
 }

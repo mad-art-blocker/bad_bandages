@@ -37,3 +37,20 @@
     scale: 100% 1;
   }
 }
+
+/* ................................. */
+/** - src/scripts/intersectionObservers.js - Animation **/
+/* SPIN IN N OUT */
+
+.observeThisJS {
+  opacity: 0;
+  translate: -80%;
+  transition: all 800ms ease;
+  rotate: -360deg;
+}
+
+.showMe {
+  opacity: 1;
+  translate: 0;
+  rotate: none;
+}

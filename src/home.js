@@ -1,4 +1,4 @@
 import "./home.css";
-import "./stylesheets/animations.css";
 
+import "./stylesheets/cards.css";
 import "./index.js";

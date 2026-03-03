@@ -1,5 +1,4 @@
-@import url("./stylesheets/cards.css");
-
+/* CSS imported from pages javascript file. */
 /* h1 in globals.css */
 
 .intro-box {
@@ -23,53 +22,44 @@
   margin: auto;
 }
 
-/*? HOME MEDIA QUERIES ?*/
+/* HOME MEDIA QUERIES */
 
+/* If you prefer this syntax instead: */
+/* @media (width >= 100px) {} */
+
+/* ============================================ */
 /* Largest to smallest */
-/**=========== MEDIA QUERIES 825px ===========**/
-/* 51.563rem */
-
-/* @media (max-width: 51.563rem) {} */
-
 /**=========== MEDIA QUERIES 810px ===========**/
+
 /* 50.625rem */
 
-/* @media (max-width: 50.625rem) {} */
-
-/**=========== MEDIA QUERIES 768px ===========**/
-/* 48rem */
-
-/* Less than or equal to 48rem */
-/* If you want to use this syntax instead:
- 
- @media (max-width: 48rem) {}
- 
- */
-
-/*? Hero Section ?*/
-@media (width <= 48rem) {
+/* Hero Section */
+@media (max-width: 50.625rem) {
   .intro-box {
-    margin: auto;
+    margin: 0 auto;
     transform: none;
   }
 }
 
-/*? Hero Section ?*/
-@media (width <= 48rem) {
+/**=========== MEDIA QUERIES 768px ===========**/
+/* 48rem */
+
+/* Hero Section */
+@media (max-width: 48rem) {
   .bg-banner {
     background-image: url(./assets/bb-mascot-144x190.svg);
     background-position: bottom;
-    background-size: 50%;
-    /* height: auto; */
+    background-size: 60%;
+    height: 69dvh;
   }
 }
 
 /**=========== MEDIA QUERIES 480px ===========**/
 /* 30rem */
 
-/*? Hero Section ?*/
-@media (width <= 30rem) {
+/* Hero Section */
+@media (max-width: 30rem) {
   .bg-banner {
-    max-height: 50dvh;
+    height: 55dvh;
   }
 }

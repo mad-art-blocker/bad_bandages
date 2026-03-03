@@ -24,14 +24,19 @@
   text-align: center;
 }
 
-/*? ABOUT MEDIA QUERIES ?*/
+/* ABOUT MEDIA QUERIES */
+
+/* If you prefer this syntax instead: */
+/* @media (width >= 100px) {} */
+
+/* ============================================ */
 
 /* Largest to smallest */
 /**=========== MEDIA QUERIES 810px ===========**/
 
 /* 50.625rem */
 
-/*? Hero Section ?*/
+/* Hero Section */
 @media (max-width: 50.625rem) {
   .intro-box {
     margin: 0 auto;
@@ -42,7 +47,7 @@
 /**=========== MEDIA QUERIES 768px ===========**/
 /* 48rem */
 
-/*? Hero Section ?*/
+/* Hero Section */
 @media (max-width: 48rem) {
   .bg-banner {
     background-image: url(../src/assets/bb-mascot-144x190.svg);
@@ -55,7 +60,7 @@
 /**=========== MEDIA QUERIES 480px ===========**/
 /* 30rem */
 
-/*? Hero Section ?*/
+/* Hero Section */
 @media (max-width: 30rem) {
   .bg-banner {
     height: 55dvh;

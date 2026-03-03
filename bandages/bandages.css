@@ -25,21 +25,6 @@
   text-align: center;
 }
 
-/** - src/scripts/intersectionObservers.js - Animation **/
-
-.observeThisJS {
-  opacity: 0;
-  translate: -100%;
-  transition: all 800ms ease;
-  rotate: -360deg;
-}
-
-.showMe {
-  opacity: 1;
-  translate: 0;
-  rotate: none;
-}
-
 /** Drawer CSS Toggle Button **/
 
 .drawer-toggle {
@@ -73,7 +58,12 @@
   text-align: center;
 }
 
-/*? BANDAGES MEDIA QUERIES ?*/
+/* BANDAGES MEDIA QUERIES */
+
+/* If you prefer this syntax instead: */
+/* @media (width >= 100px) {} */
+
+/* ============================================ */
 
 /* Largest to smallest */
 
