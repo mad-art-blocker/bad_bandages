@@ -2,7 +2,7 @@
 /* h1 in globals.css */
 
 .intro-box {
-  transform: translateX(10dvw) translateY(var(--100px));
+  transform: translateX(9dvw) translateY(var(--100px));
   max-width: fit-content;
   /* width: clamp(400px, 300px, 200px); */
   /* padding: var(--10px); */

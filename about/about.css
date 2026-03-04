@@ -17,9 +17,9 @@
 }
 
 .intro-box {
-  transform: translateX(30px) translateY(200px);
-  /* max-width: fit-content; */
-  width: var(--300px);
+  transform: translateX(var(--100px)) translateY(var(--100px));
+  width: fit-content;
+  /* width: clamp(400px, 300px, 200px); */
   /* padding: var(--10px); */
   text-align: center;
 }

@@ -1,29 +1,26 @@
-/* CSS is imported via the page's javascript file. */
-
-/* @import url("../src/stylesheets/cards.css"); */
-/* @import url("../src/stylesheets/ui-css/sidebars-grid.css"); */
-
+/* CSS imported from pages javascript file. */
 /* h1 in globals.css */
+
+
+.intro-box {
+  transform: translateX(var(--810px)) rotate(40deg) translateY(38dvh);
+  width: fit-content;
+    /* width: clamp(400px, 300px, 200px); */
+  /* padding: var(--10px); */
+  text-align: center;
+}
 
 .bg-banner {
   height: 100dvh;
   background:
-    url(../src/assets/bb-mascot-480x270.svg) center/cover no-repeat,
-    linear-gradient(
-    40deg,
-    #3e2a65 0%,
-    oklch(38.731% 0.1147 294.987) 50%,
-    #3e2a65 20%
-  );
+    url(../src/assets/bb-mascot-480x270.svg) center/contain no-repeat,
+    linear-gradient(40deg,
+      #3e2a65 0%,
+      oklch(38.731% 0.1147 294.987) 50%,
+      #3e2a65 20%);
+  margin: auto;
 }
 
-.intro-box {
-  transform: translateX(var(--700px)) rotate(40deg) translateY(350px);
-  max-width: fit-content;
-  width: var(--300px);
-  /* padding: var(--10px); */
-  text-align: center;
-}
 
 /** Drawer CSS Toggle Button **/
 
@@ -58,68 +55,46 @@
   text-align: center;
 }
 
-/* BANDAGES MEDIA QUERIES */
+
+
+/* HOME MEDIA QUERIES */
 
 /* If you prefer this syntax instead: */
 /* @media (width >= 100px) {} */
 
 /* ============================================ */
-
 /* Largest to smallest */
-
-/**=========== MEDIA QUERIES 1024px ===========**/
-/* 64rem */
-
-/*? Hero Section ?*/
-@media (max-width: 64rem) {
-  .intro-box {
-    transform: translateX(300px) translateY(150px);
-    width: var(--300px);
-    text-align: center;
-  }
-}
-
-/*? Hero Section ?*/
-@media (max-width: 64rem) {
-  .bg-banner {
-    height: 50dvh;
-  }
-}
-
-/**=========== MEDIA QUERIES 825px ===========**/
-/* 51.563rem */
-
-/*? Hero Section ?*/
-@media (max-width: 51.563rem) {
-  .intro-box {
-    margin: var(--64px) auto;
-    transform: none;
-  }
-}
-
-/*? Hero Section ?*/
-@media (max-width: 51.563rem) {
-  .bg-banner {
-    background-image: url(../src/assets/bb-mascot-144x190.svg);
-    background-position: bottom;
-    background-size: 60%;
-    height: 68dvh;
-  }
-}
-
 /**=========== MEDIA QUERIES 810px ===========**/
 
 /* 50.625rem */
 
+/* Hero Section */
+@media (max-width: 50.625rem) {
+  .intro-box {
+    margin: 0 auto;
+    transform: none;
+  }
+}
+
 /**=========== MEDIA QUERIES 768px ===========**/
 /* 48rem */
+
+/* Hero Section */
+@media (max-width: 48rem) {
+  .bg-banner {
+    background-image: url(../src/assets/bb-mascot-144x190.svg);
+    background-position: bottom;
+    background-size: 60%;
+    height: 69dvh;
+  }
+}
 
 /**=========== MEDIA QUERIES 480px ===========**/
 /* 30rem */
 
-/*? Hero Section ?*/
+/* Hero Section */
 @media (max-width: 30rem) {
   .bg-banner {
-    height: 60dvh;
+    height: 55dvh;
   }
 }
