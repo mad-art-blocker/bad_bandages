@@ -1,10 +1,12 @@
+/* All buttons are here except the mobil-menu
+ hamburger and logo button in the navbar.css */
+
 button {
-  border: var(--color-border-light);
-  background-color: transparent;
-  color: var(--color-bandage);
+  all: unset; /* Removes all inherited and default styles */
+  cursor: pointer;
   display: block;
   font-weight: bold;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1rem);
   margin: 0 auto;
   padding: var(--16px) var(--16px);
   transition: 0.1s;
@@ -16,17 +18,34 @@ button {
 } */
 
 .button-bandage {
+  color: var(--color-swatch2);
+  background-color: var(--color-bandage);
   border-radius: var(--25px);
+}
+
+/** Drawer CSS/JS Toggle Button **/
+
+.drawerToggleBTN {
+  background-color: var(--color-wild);
+  border-radius: var(--4px);
+  padding: 10px 20px;
+  font-size: 18px;
 }
 
 /* All buttons share the same hover and active effects. */
 
 button:hover {
-  transform: scale(1.06);
-  cursor: pointer;
+  transform: translateY(-2px); /* Slight lift */
 }
 
 button:active {
   color: var(--color-black);
   background-color: var(--color-accent);
+}
+
+/* Focus state for accessibility: */
+
+button:focus {
+  outline: var(--color-border-button);
+  outline-offset: var(--2px);
 }

@@ -10,8 +10,7 @@
   width: 100%;
   position: sticky;
   top: 0;
-  /* Left 0 because on mobile doesn't respect the global container's border? */
-  left: 0;
+  /* left: 0; */
   /* background: transparent; */
   /* backdrop-filter: blur(10px); */
   padding: var(--8px);
@@ -37,7 +36,6 @@
 
 .navbar-toggleJS {
   background: var(--color-swatch3);
-  cursor: pointer;
   display: none;
   padding: var(--8px);
 
@@ -67,9 +65,10 @@
 .logo {
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 10px #cf9a8d);
+
+  &:hover {
+    filter: drop-shadow(0 0 4px #cf9a8d);
+  }
 }
 
 [aria-current] {

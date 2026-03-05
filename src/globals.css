@@ -16,8 +16,9 @@
   --color-highlight: oklch(63.69% 0.11266 316.188 / 0.247);
   --color-important: oklch(46.653% 0.09273 30.741);
 
-  --color-border-light: var(--2px) var(--color-swatch2) solid;
+  --color-border-light: var(--2px) var(--color-swatch1) solid;
   --color-border-dark: var(--1px) var(--color-black) solid;
+  --color-border-button: var(--1px) var(--color-swatch1) solid;
   --color-border-important: var(--1px) var(--color-important) solid;
 
   --color-shadow: var(--color-black);

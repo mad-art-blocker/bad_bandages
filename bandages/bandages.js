@@ -1,18 +1,18 @@
 // CSS imports
+import "../src/stylesheets/animations.css";
+import "../src/stylesheets/cards.css";
 import "../src/stylesheets/ui-css/sidebars-grid.css";
 import "./bandages.css";
-import "../src/stylesheets/cards.css";
-import "../src/stylesheets/animations.css";
 
 // JavaScript imports
 import "../src/index.js";
 import "../src/scripts/intersectionObservers.js";
 
-document.querySelector(".drawer-toggle").addEventListener(
+document.querySelector(".drawerToggleBTN").addEventListener(
   "click",
   toggleDrawer,
 );
-document.querySelector(".drawer-close").addEventListener(
+document.querySelector(".drawerCloseBTN").addEventListener(
   "click",
   toggleDrawer,
 );
