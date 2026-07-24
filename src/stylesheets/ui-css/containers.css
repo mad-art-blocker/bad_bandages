@@ -1,8 +1,8 @@
-/* The page-container class wraps all containers except 
-the Villain and the Footer in the HTML. You can set a 
+/* The page-container class wraps all containers except
+the Villain and the Footer in the HTML. You can set a
 global width and avoid using container utility classes
-(though you can still use them if they fit your needs or 
-are adjusted). Remove the div and its class from the HTML 
+(though you can still use them if they fit your needs or
+are adjusted). Remove the div and its class from the HTML
 pages if you don’t need it. */
 
 .page-container {
@@ -29,7 +29,7 @@ pages if you don’t need it. */
 
 /* No Container classes used in the Bandages page. */
 
-/* The Villain container can be as another footer or anything, 
+/* The Villain container can be as another footer or anything,
 it reflects the hero section: */
 
 .villain {
@@ -43,7 +43,9 @@ it reflects the hero section: */
 /*? PAGE CONTAINER ?*/
 
 @media (max-width: 30rem) {
-  .page-container, .villain, .main-footer {
+  .page-container,
+  .villain,
+  .main-footer {
     width: 95%;
     margin: 0 auto;
   }

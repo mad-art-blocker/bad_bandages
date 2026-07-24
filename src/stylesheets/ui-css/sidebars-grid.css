@@ -10,7 +10,8 @@
   margin: var(--10px);
 }
 
-.navbar1, .navbar2 {
+.navbar1,
+.navbar2 {
   grid-area: navb1, navb2;
   /* height: auto; */
 

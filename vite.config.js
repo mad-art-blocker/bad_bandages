@@ -1,22 +1,13 @@
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'vite';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import { resolve } from "node:path";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [],
-  server: {
-    port: 5173,
-    strictPort: true,
-    open: true,
-  },
   build: {
     rolldownOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, './about/index.html'),
-        bandage: resolve(__dirname, './bandages/index.html'),
+        main: resolve(import.meta.dirname, "index.html"),
+        about: resolve(import.meta.dirname, "about/index.html"),
+        bandages: resolve(import.meta.dirname, "bandages/index.html"),
       },
     },
   },

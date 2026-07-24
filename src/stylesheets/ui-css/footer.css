@@ -9,7 +9,8 @@
       font-size: small;
     }
 
-    a::before, a::after {
+    a::before,
+    a::after {
       content: " \260D ";
     }
   }
