@@ -34,44 +34,43 @@
   </head>
 
   <body>
+    <!-- NAVBAR is not wrapped with the page-container -->
+    <header class="navbar-main">
+      <nav class="navbar-container small-container">
+        <a href="/" aria-label="Go to home page">
+          <img
+            class="logo"
+            src="/bad-bandages-logo130x52.svg"
+            alt="Bad Bandages logo"
+            height="52"
+            width="130"
+            loading="eager"
+          />
+        </a>
+
+        <h1>
+          <a href="/" class="siteTitleJS">...</a>
+        </h1>
+        <button
+          class="navbar-toggleJS"
+          aria-label="Toggles Menu List"
+          type="button"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menuJS">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#top" aria-current="page">About</a>
+          </li>
+          <li><a href="../bandages/">Bandages</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- MAIN WRAPPER -->
     <div class="page-container">
-      <!-- NAVBAR -->
-      <header class="navbar-main">
-        <nav class="navbar-container small-container">
-          <a href="/" aria-label="Go to home page">
-            <img
-              class="logo"
-              src="/bad-bandages-logo130x52.svg"
-              alt="Bad Bandages logo"
-              height="52"
-              width="130"
-              loading="eager"
-            />
-          </a>
-
-          <h1>
-            <a href="/" class="siteTitleJS">...</a>
-          </h1>
-          <button
-            class="navbar-toggleJS"
-            aria-label="Toggles Menu List"
-            type="button"
-          >
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul class="navbar-menuJS">
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="#top" aria-current="page">About</a>
-            </li>
-            <li><a href="../bandages/">Bandages</a></li>
-          </ul>
-        </nav>
-      </header>
-
       <!-- HERO -->
       <div class="bg-banner small-container test">
         <section class="intro-box slide-left-anim">
@@ -82,7 +81,7 @@
       </div>
 
       <main class="small-container marginA">
-        <p>
+        <p class="txt-justify">
           This page has simple CSS animations added to the intro box and main
           paragraph using the animations.css. Remove the test class from the
           HTML header container. The red border (inside the helpers.css file) is
@@ -94,19 +93,22 @@
       </main>
     </div>
 
-    <!-- VILLAIN CONTAINER is not part of the page-container -->
+    <!-- VILLAIN CONTAINER is not part of the page-container wrapper -->
     <div class="villain">
       <h2 class="txt-center">The Villain Container</h2>
     </div>
 
-    <!-- FOOTER is not part of the page-container -->
+    <!-- FOOTER is not part of the page-container wrapper -->
     <footer class="main-footer">
-      <small>
-        <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved.
-        <a href="#top"> Privacy Policy </a> version release: October 31, 2025
-      </small>
-    </footer>
+            &copy; <a class="siteTitleJS" href="/">-</a> | by 
+                <a
+                    href="https://github.com/mad-art-blocker/bad_bandages"
+                    target="_blank"
+                    rel="noopener"
+                    >&copy; Mad Art Blocker</a
+                >
+                | All Rights Reserved. <span id="thisYearJS">-</span> | EST. October 31, 2025
+        </footer>
 
     <!-- JS imported from the page's JS file. -->
     <!-- <script type="module" src="./about.js" nonce=""></script> -->

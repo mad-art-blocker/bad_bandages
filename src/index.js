@@ -1,6 +1,6 @@
-import "./stylesheets/ui-css/navbar.css";
-import "./stylesheets/ui-css/footer.css";
-import "./stylesheets/ui-css/containers.css";
+import "./stylesheets/navbar.css";
+import "./stylesheets/footer.css";
+import "./stylesheets/containers.css";
 import "./stylesheets/buttons.css";
 import "./stylesheets/animations.css";
 import "./stylesheets/helpers.css";
@@ -17,7 +17,7 @@ const titlesKeys = {
 // Website Title Name
 const injectTitle = document.querySelectorAll(".siteTitleJS");
 for (let it = 0; it < injectTitle.length; it++) {
-  injectTitle[it].textContent = `${titlesKeys.webSiteTitle.toUpperCase()}`;
+  injectTitle[it].textContent = `${titlesKeys.webSiteTitle}`;
 }
 
 // Sub-title or Token:
@@ -32,8 +32,18 @@ navbarToggle.addEventListener("click", () => {
   navbarMenu.classList.toggle("active");
 });
 
-// Footer Date:
-const serveYear = new Date();
-const year = serveYear.getFullYear();
+// FOOTER DATE" -->
 
-document.getElementById("thisYearJS").textContent = year;
+const now = new Date();
+
+const options = {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+};
+
+const formattedDate = now.toLocaleDateString("en-US", options);
+const dateElement = document.getElementById("thisYearJS");
+if (dateElement) {
+  dateElement.textContent = formattedDate;
+}

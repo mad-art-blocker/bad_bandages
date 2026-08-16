@@ -1,18 +1,19 @@
 /* The page-container class wraps all containers except
-the Villain and the Footer in the HTML. You can set a
-global width and avoid using container utility classes
-(though you can still use them if they fit your needs or
-are adjusted). Remove the div and its class from the HTML
-pages if you don’t need it. */
+the Villain and the Footer. You can set a global width instead
+and avoid using container utility classes (though you can still
+use them or make your own).  */
 
+/* Maximum width of the page layout */
 .page-container {
   /* Check the media queries if trouble-shooting */
+  max-width: var(--1800px);
+  margin: 0 auto;
   height: auto;
 }
 
 /***** Generic Containers *****/
 
-/* Large Container class not used but try it out! */
+/* Large Container class not used yet. */
 .large-container {
   max-width: var(--1440px);
 }
@@ -47,6 +48,6 @@ it reflects the hero section: */
   .villain,
   .main-footer {
     width: 95%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }

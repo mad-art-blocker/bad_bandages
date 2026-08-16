@@ -46,6 +46,6 @@ button:active {
 /* Focus state for accessibility: */
 
 button:focus {
-  outline: var(--color-border-button);
+  outline: var(--color-swatch1);
   outline-offset: var(--2px);
 }

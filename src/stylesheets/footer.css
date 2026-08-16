@@ -1,0 +1,20 @@
+.main-footer {
+  background-color: var(--color-black);
+  text-align: center;
+  padding: var(--25px) 0;
+  /* bold or italic | style | font-size/line-height | font-family */
+  font:
+    italic small-caps 1em/2 Montserrat,
+    Helvetica,
+    sans-serif;
+
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  /* a::before, */
+  a::after {
+    content: ' \2197 ';
+  }
+}

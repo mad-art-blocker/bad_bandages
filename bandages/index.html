@@ -37,7 +37,7 @@
   <body>
     <!-- MAIN WRAPPER -->
     <div class="page-container">
-      <!-- NAVBAR -->
+      <!-- NAVBAR is wrapped with the page-container -->
       <header class="navbar-main">
         <nav class="navbar-container">
           <a href="/" aria-label="Go to home page">
@@ -149,11 +149,17 @@
           </details>
         </aside>
         <main class="marginA">
-          <p>
+          <p class=" txt-center">
             I'm using CSS Grid in the main section, flanked by two sidebars to
             be filled with "helpful" links to patch up my otherwise unimpressive
             page. There's also a drawer for quick notes, links, and or other
             useful resources.
+          </p>
+          <p class="txt-center">
+            I'm using no container classes
+            All pages without container classes
+            Resets to  1800 px. You can change this in the
+            containes.css "page-container" class.
           </p>
         </main>
         <aside class="navbar2">
@@ -212,19 +218,24 @@
       </div>
     </div>
 
-    <!-- VILLAIN CONTAINER is not part of the page-container or grid layout -->
+    <!-- VILLAIN CONTAINER is not part of the page-container wrapper or grid layout -->
     <div class="villain">
       <h2 class="txt-center">The Villain Container</h2>
     </div>
 
-    <!-- FOOTER is not part of the page-container or grid layout -->
+    <!-- FOOTER is not part of the page-container wrapper or grid layout -->
     <footer class="main-footer">
-      <small>
-        <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved.
-        <a href="#top"> Privacy Policy </a> version release: October 31, 2025
-      </small>
-    </footer>
+
+            &copy; <a class="siteTitleJS" href="/">-</a> | by 
+                <a
+                    href="https://github.com/mad-art-blocker/bad_bandages"
+                    target="_blank"
+                    rel="noopener"
+                    >&copy; Mad Art Blocker</a
+                >
+                | All Rights Reserved. <span id="thisYearJS">-</span> | EST. October 31, 2025
+                
+        </footer>
 
     <!-- JS imported from the page's JS file. -->
     <!-- <script type="module" src="./bandages.js" nonce="your-nonce-value"></script> -->

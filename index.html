@@ -1,121 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Other CSS and JS is imported via the page's JS file. -->
+        <!-- <link rel="stylesheet" href="./src/home.css" /> -->
+        <title>Bad Bandages | Home</title>
+        <script
+            src="./src/home.js"
+            defer
+            type="module"
+            nonce="random-nonce-value"
+        ></script>
+    </head>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <!-- Other CSS and JS is imported via the page's JS file. -->
-    <!-- <link rel="stylesheet" href="./src/home.css" /> -->
-    <title>Bad Bandages | Home</title>
-    <script
-      src="./src/home.js"
-      defer
-      type="module"
-      nonce="random-nonce-value"
-    ></script>
-  </head>
+    <body>
+        <!--NAVBAR is not wrapped with the page-container -->
+        <header class="navbar-main">
+            <nav class="navbar-container medium-container">
+                <a href="/" aria-label="Go to home page">
+                    <img
+                        class="logo"
+                        src="/bad-bandages-logo130x52.svg"
+                        alt="Bad Bandages logo"
+                        height="52"
+                        width="130"
+                        loading="eager"
+                    />
+                </a>
+                <h1>
+                    <a href="/" class="siteTitleJS">Mad Art Blocker</a>
+                </h1>
+                <button
+                    class="navbar-toggleJS"
+                    aria-label="Toggles Menu List"
+                    type="button"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="navbar-menuJS">
+                    <li><a href="/" aria-current="page">Home</a></li>
+                    <li><a href="./about/">About</a></li>
+                    <li><a href="./bandages/">Bandages</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <body>
-    <!-- MAIN WRAPPER -->
-    <div class="page-container">
-      <!--NAVBAR -->
-      <header class="navbar-main">
-        <nav class="navbar-container medium-container">
-          <a href="/" aria-label="Go to home page">
-            <img
-              class="logo"
-              src="/bad-bandages-logo130x52.svg"
-              alt="Bad Bandages logo"
-              height="52"
-              width="130"
-              loading="eager"
-            />
-          </a>
-          <h1>
-            <a href="/" class="siteTitleJS">Mad Art Blocker</a>
-          </h1>
-          <button
-            class="navbar-toggleJS"
-            aria-label="Toggles Menu List"
-            type="button"
-          >
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul class="navbar-menuJS">
-            <li><a href="/" aria-current="page">Home</a></li>
-            <li><a href="./about/">About</a></li>
-            <li><a href="./bandages/">Bandages</a></li>
-          </ul>
-        </nav>
-      </header>
+        <!-- MAIN WRAPPER -->
+        <div class="page-container test">
+            <!-- HERO -->
+            <div class="bg-banner medium-container">
+                <section class="intro-box">
+                    <h2>HOME PAGE</h2>
+                    <p>Welcome to the home page!</p>
+                    <p>I'm using medium-container classes</p>
+                </section>
+            </div>
 
-      <!-- HERO -->
-      <div class="bg-banner medium-container">
-        <section class="intro-box">
-          <h2>HOME PAGE</h2>
-          <p>
-            Welcome to the home page!
-          </p>
-          <p>I'm using medium-container classes</p>
-        </section>
-      </div>
-
-      <!-- MAIN -->
-      <main>
-        <!-- CARDS CONTAINER -->
-        <div class="card-grid slide-up-anim medium-container">
-          <article class="card">
-            <h3 class="txt-center">Card1</h3>
-            <p class="card-content">Content for card 1.</p>
-          </article>
-          <article class="card">
-            <h3 class="txt-center">Card2</h3>
-            <p class="card-content">Content for card 2.</p>
-          </article>
-          <article class="card">
-            <h3 class="txt-center">Card3</h3>
-            <p class="card-content">Content for card 3.</p>
-          </article>
+            <!-- MAIN -->
+            <main>
+                <!-- CARDS CONTAINER -->
+                <div class="card-grid slide-up-anim medium-container">
+                    <article class="card">
+                        <h3 class="txt-center">Card1</h3>
+                        <p class="card-content">Content for card 1.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="txt-center">Card2</h3>
+                        <p class="card-content">Content for card 2.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="txt-center">Card3</h3>
+                        <p class="card-content">Content for card 3.</p>
+                    </article>
+                </div>
+            </main>
         </div>
-      </main>
-    </div>
 
-    <!-- VILLAIN CONTAINER is not part of the page-container -->
+        <!-- VILLAIN CONTAINER is not part of the page-container wrapper -->
 
-    <div class="villain">
-      <h2 class="txt-center">The Villain Container</h2>
-    </div>
+        <div class="villain">
+            <h2 class="txt-center">The Villain Container</h2>
+        </div>
 
-    <!-- FOOTER is not part of the page-container -->
-    <footer class="main-footer">
-      <small>
-        <span class="siteTitleJS">|</span> &copy;
-        <span id="thisYearJS"></span> All rights reserved.
-        <a href="#top"> Privacy Policy </a> version release: October 31, 2025
-      </small>
-    </footer>
+        <!-- FOOTER is not part of the page-container wrapper -->
+        <footer class="main-footer">
 
-    <!-- JS imported from the page's JS file. -->
-    <!-- <script type="module" src="./src/home.js" nonce=""></script> -->
-  </body>
+            &copy; <a class="siteTitleJS" href="/">-</a> | by 
+                <a
+                    href="https://github.com/mad-art-blocker/bad_bandages"
+                    target="_blank"
+                    rel="noopener"
+                    >&copy; Mad Art Blocker</a
+                >
+                | All Rights Reserved. <span id="thisYearJS">-</span> | EST. October 31, 2025
+                
+        </footer>
+
+        <!-- JS imported from the page's JS file. -->
+        <!-- <script type="module" src="./src/home.js" nonce=""></script> -->
+    </body>
 </html>

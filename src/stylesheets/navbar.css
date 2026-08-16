@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background-color: var(--color-swatch0);
-  /* box-shadow: 0px 4px 4px var(--color-shadow); */
+  /* box-shadow: 0px 4px 4px var(--color-black); */
   justify-content: center;
   /* height: clamp(var(--150px), 10vh, var(--100px)); */
   /* Keep it fit content, the other pages will adapt to its height automagically */
@@ -98,8 +98,8 @@
   .navbar-menuJS {
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(1rem);
-    border-bottom: var(--color-border-light);
+    /* backdrop-filter: blur(1rem); */
+    border-bottom: var(--color-swatch1);
     display: none;
     gap: var(--32px) !important;
     height: fit-content;

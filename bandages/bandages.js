@@ -1,7 +1,7 @@
 // CSS imports
 import "../src/stylesheets/animations.css";
 import "../src/stylesheets/cards.css";
-import "../src/stylesheets/ui-css/sidebars-grid.css";
+import "../src/stylesheets/sidebars-grid.css";
 import "./bandages.css";
 
 // JavaScript imports
