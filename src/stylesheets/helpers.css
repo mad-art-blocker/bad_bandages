@@ -4,7 +4,7 @@
 /***** GLOBAL HELPERS *****/
 
 .test {
-  border: var(--color-important) var(--1px) var(--color-important) solid;
+  border: var(--1px) var(--color-important) solid;
 }
 
 .txt-light {
