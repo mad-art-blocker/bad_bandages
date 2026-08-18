@@ -5,7 +5,7 @@
     --color-swatch1: oklch(70.644% 0.05739 304.074);
     --color-swatch2: oklch(42.781% 0.10018 298.733);
     --color-swatch3: oklch(34.08% 0.10015 296.331);
-    --color-black: oklch(26.692% 0.06784 297.855);
+    --color-black: oklch(28.4% 0.074 298.46);
 
     /* OTHER SWATCHES: */
     --color-accent: oklch(62.146% 0.09745 37.731);
@@ -14,12 +14,12 @@
     --color-highlight: oklch(63.69% 0.11266 316.188 / 0.247);
     --color-important: oklch(46.653% 0.09273 30.741);
 
-    /* --color-gradient: linear-gradient(
-    to bottom,
-    oklch(36.402% 0.11702 294.851),
-    oklch(33.045% 0.10196 295.677),
-    oklch(27.02% 0.09188 296.588)
-    ); */
+    --color-gradient: linear-gradient(
+        to bottom,
+        #493379,
+        #493379,
+    #3E2A64
+    );
 
     /* Animation Transitions
     Usage: transition: var(--main-transition); */
@@ -52,7 +52,7 @@
     --100px: 6.5rem;
     --300px: 18.75rem;
     --400px: 25rem;
-    --700px: 43.75rem;
+    --768px: 48rem;
 
     /* CONTAINER SIZES */
     --810px: 50.625rem;
@@ -68,7 +68,7 @@
 *,
 *::before,
 *::after {
-    border-radius: var(--6px);
+    /* border-radius: var(--6px); */
     box-sizing: border-box;
     margin: 0;
     outline: none;
@@ -76,7 +76,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-/* Gradient variable is commented, up ^ in the color variables */
+
 html {
     /* background: var(--color-gradient); */
     background-color: var(--color-swatch3);
@@ -99,7 +99,7 @@ body {
 }
 
 a {
-    color: var(--color-bandage);
+    color: var(--color-accent);
     font-weight: 500;
     /* Long words or paragraphs wont wrap?: */
     white-space: nowrap;
@@ -111,7 +111,7 @@ a {
     transition: color 150ms ease;
 
     &:hover {
-        color: var(--color-accent);
+        color: var(--color-bandage);
     }
 }
 
@@ -135,8 +135,7 @@ h2 {
 }
 
 h3 {
-    /* background-color: var(--color-highlight); */
-    color: var(--color-bandage);
+    color: inherit;
     font-size: clamp(1em, 2.5vw, 1.4em);
     font-weight: 500;
     letter-spacing: var(--4px);

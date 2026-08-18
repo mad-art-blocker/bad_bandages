@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Other CSS and JS is imported via the page's JS file. -->
+        <!-- <link rel="stylesheet" href="./src/home.css" /> -->
+        <title>Bad Bandages | Home</title>
+        <script
+            src="./bulletin-board.js"
+            defer
+            type="module"
+            nonce="random-nonce-value"
+        ></script>
+    </head>
+
+    <body>
+        <!--NAVBAR is not wrapped with the page-container -->
+        <header class="navbar-main">
+            <nav class="navbar-container medium-container">
+                <a href="/" aria-label="Go to home page">
+                    <img
+                        class="logo"
+                        src="/bad-bandages-logo130x52.svg"
+                        alt="Bad Bandages logo"
+                        height="52"
+                        width="130"
+                        loading="eager"
+                    />
+                </a>
+                <h1>
+                    <a href="/" class="siteTitleJS">Mad Art Blocker</a>
+                </h1>
+                <button
+                    class="navbar-toggleJS"
+                    aria-label="Toggles Menu List"
+                    type="button"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="navbar-menuJS">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../bandages/">Bandages</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN WRAPPER -->
+        <div class="page-container">
+            <!-- HERO -->
+            <div class="hero medium-container">
+                <!-- Left Column: 2 Stacked Rows (Max 400px Width) -->
+                <div class="left-column">
+                    <section class="info-box-row">
+                        <h2>Top Section</h2>
+                        <p>Content for the first stacked row goes here.</p>
+                        <ul class="ul-bullets">
+                            <li>Class 1: 5:00 AM - 10:00 AM</li>
+                            <li>Class 2: 10:15 AM - 3:15 PM</li>
+                        </ul>
+                    </section>
+                    <section class="info-box-row">
+                        <h2>Bottom Section</h2>
+                        <p>Content for the second stacked row goes here.</p>
+                        <ol>
+                            <li>Fix Errors</li>
+                            <li>Meeting: 10:15 AM </li>
+                        </ol>
+                    </section>
+                </div>
+
+                <!-- Right Column: Background Image -->
+                <div class="right-column"></div>
+            </div>
+
+            <!-- MAIN -->
+            <main>
+                <div class="marginY">
+                    <h2
+                        class="txt-center highlight medium-container marginA">The Bulletin Board Page</h2>
+                </div>
+            </main>
+        </div>
+
+        <!-- VILLAIN CONTAINER is not part of the page-container wrapper -->
+
+        <!-- <div class="villain">
+            <h2 class="txt-center">The Villain Container</h2>
+        </div> -->
+
+        <!-- FOOTER is not part of the page-container wrapper -->
+        <footer class="main-footer">
+
+            &copy; <a class="siteTitleJS" href="/">-</a> | by 
+                <a
+                    href="https://github.com/mad-art-blocker/bad_bandages"
+                    target="_blank"
+                    rel="noopener"
+                    >&copy; Mad Art Blocker</a
+                >
+                | All Rights Reserved. <span id="thisYearJS">-</span> | EST. October 31, 2025
+                
+        </footer>
+
+        <!-- JS imported from the page's JS file. -->
+        <!-- <script type="module" src="./bulletin-board/bulletin.js" nonce=""></script> -->
+    </body>
+</html>

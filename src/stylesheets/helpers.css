@@ -7,6 +7,10 @@
   border: var(--1px) var(--color-important) solid;
 }
 
+.ul-bullets {
+  list-style-type: disc !important;
+}
+
 .txt-light {
   color: var(--color-white);
 }

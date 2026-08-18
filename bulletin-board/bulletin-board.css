@@ -1,0 +1,73 @@
+/* Container holding both columns side-by-side */
+.hero {
+  display: flex;
+  flex-direction: row; /* Enforces horizontal side-by-side layout */
+  min-height: 75dvh;
+  margin: 0 auto;
+}
+
+/* Left Column Styling */
+.left-column {
+  display: flex;
+  flex-direction: column; /* Stacks the two rows vertically */
+  width: var(--400px); /* Fixed width for the left sidebar */
+  max-width: var(--400px);
+  flex-shrink: 0; /* Prevents column from shrinking smaller than 400px */
+  padding: var(--16px);
+  background: var(--color-gradient);
+  /* Spacing between the two stacked rows */
+  /* gap: var(--16px); */
+}
+
+/* Individual Stacked Rows */
+.left-column .info-box-row {
+  flex: 1; /* Shares height evenly between both rows */
+  padding: var(--16px);
+  /* text-align: center; */
+  /* background-color: var(--color-highlight); */
+}
+
+/* Right Column: Background Image */
+.right-column {
+  flex: 1; /* Automatically fills all remaining space to the right */
+  background:
+    url(../src/assets/bb-mascot-480x270.svg) center/contain no-repeat,
+    linear-gradient(
+    40deg,
+    #3e2a65 0%,
+    oklch(38.731% 0.1147 294.987) 50%,
+    var(--color-swatch0) 20%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/** MEDIA QUERIES **/
+/* Responsive: stack columns vertically on small screens (image first via ordering) */
+@media (max-width: 48rem) {
+  .hero {
+    flex-direction: column; /* Reverse: column-reverse */
+    height: auto; /* let content determine height */
+  }
+
+  /* Explicit ordering: put image (right-column) before the left-column */
+  .right-column {
+    order: -1; /* appears first */
+    width: 100%;
+    min-height: 40dvh; /* provide visible area for background image */
+    background-position: center;
+  }
+
+  .left-column {
+    order: 0; /* appears after the image */
+    width: 100%;
+    max-width: none;
+    flex-shrink: 0;
+  }
+
+  .left-column .info-box-row {
+    /* let rows size naturally on mobile; remove equal-height sharing if needed */
+    flex: none;
+  }
+}
