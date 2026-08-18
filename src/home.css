@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.bg-banner {
+.hero {
   height: 72dvh;
   background:
     url(./assets/bb-mascot-480x270.svg) center/contain no-repeat,
@@ -46,7 +46,7 @@
 
 /* Hero Section */
 @media (max-width: 48rem) {
-  .bg-banner {
+  .hero {
     background-image: url(./assets/bb-mascot-144x190.svg);
     background-position: bottom;
     background-size: 60%;
@@ -59,7 +59,7 @@
 
 /* Hero Section */
 @media (max-width: 30rem) {
-  .bg-banner {
+  .hero {
     height: 55dvh;
   }
 }
